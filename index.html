@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
   xmlns:o="urn:schemas-microsoft-com:office:office">
+
 <head>
   <meta charset="utf-8">
   <meta name="color-scheme" content="light">
@@ -25,7 +26,8 @@
       -ms-text-size-adjust: 100%;
       -webkit-text-size-adjust: 100%;
     }
-    a{
+
+    a {
       text-decoration: none;
       display: inline-block;
     }
@@ -197,15 +199,17 @@
       line-height: 22px;
     }
 
+    .card p span {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
     .card-content p {
       font-weight: 400;
       font-size: 10px;
       line-height: 15px;
       color: #000000;
     }
-
-    /*HEADING SECTION*/
-    .heading-section {}
 
     .heading-section h2 {
       font-family: 'Avenir';
@@ -226,8 +230,6 @@
       color: #E24929;
       margin: 0px;
     }
-
-    .icon img {}
 
     /*SERVICES*/
     .text-services {
@@ -291,6 +293,7 @@
       display: inline-block;
       margin: 5px;
     }
+
     .social-media li img {
       max-width: 16px;
     }
@@ -321,14 +324,6 @@
       text-align: center;
       color: #FFFFFF;
       margin: 0px;
-    }
-
-    @media screen and (max-width: 500px) {
-      .text-services {
-        padding-left: 0;
-        padding-right: 20px;
-        text-align: left;
-      }
     }
 
     .text-center {
@@ -374,17 +369,53 @@
       margin-bottom: 15px;
       margin-top: 15px;
     }
-    .container{
+
+    .container {
       padding-left: 60px;
       padding-right: 60px;
     }
-    .pt-50{
+
+    .pt-50 {
       padding-top: 50px;
     }
-    .pb-50{
+
+    .pb-50 {
       padding-bottom: 50px;
     }
 
+    @media screen and (max-width: 440px) {
+      .container {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      .pt-50 {
+        padding-top: 30px;
+      }
+
+      .pb-50 {
+        padding-bottom: 30px;
+      }
+
+      .text-services {
+        padding-left: 0;
+        padding-right: 20px;
+        text-align: left;
+      }
+
+      .counter td {
+        padding: 20px 10px !important;
+      }
+
+      .card p {
+        font-size: 12px !important;
+        line-height: 20px;
+      }
+
+      .card p span {
+        font-size: 14px;
+      }
+    }
   </style>
 </head>
 
@@ -417,15 +448,24 @@
                 <td valign="middle" class="card" style="text-align:center;">
                   <table border="0" cellpadding="0" cellspacing="0" width="100%"
                     style="background-color:#162C55; color: #ffffff;">
-                    <tr style="text-align: center;">
+                    <tr class="counter" style="text-align: center;">
                       <td style="padding: 20px;">
-                        <p>4200Cr. +<br>Invested so far</p>
+                        <p>
+                          <span>4200Cr. +</span>
+                          <br>Invested so far
+                        </p>
                       </td>
                       <td style="padding: 20px;">
-                        <p>100+<br>Investments</p>
+                        <p>
+                          <span>100+</span>
+                          <br>Investments
+                        </p>
                       </td>
                       <td style="padding: 20px;">
-                        <p>20+<br>Unicorns</p>
+                        <p>
+                          <span>20+</span>
+                          <br>Unicorns
+                        </p>
                       </td>
                     </tr>
                   </table>
@@ -438,17 +478,15 @@
                     ago with the aim to be lifecycle partners for startups in their financing journey and with this
                     north star, we have supported over 100+ startups in their journey so far. We are excited to launch
                     this newsletter with updates on the Trifecta family of startups, founders and team members. We look
-                    forward to your continued love and support.
-                  </p>
+                    forward to your continued love and support. </p>
                   <p> In the first half of FY23, we have provided venture debt to [10] leading Indian startups, across
                     sectors and stages. Our equity fund made an investment in Arzooo, a b2b player in the consumer
                     electronics and durables space. Trifecta’s financial advisory partnered with XX new startups
-                    providing advisory and active treasury management tools.
-                  </p>
-                  </td>
-                  </tr>
-                  </table>
-                  </td>
+                    providing advisory and active treasury management tools. </p>
+                    </td>
+                    </tr>
+                    </table>
+                    </td>
         </tr>
         <!-- end: tr -->
         <tr>
@@ -471,35 +509,36 @@
                   <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                     <tr>
                       <td class="icon">
-                        <a href="https://trifectacapital.in/offerings/credit/"> <img
-                            src="https://praveen-terralogic.github.io/capital/imgs/UDaan.png" alt=""
-                            style="width:35%; max-width: 600px; height: auto; display: block;"></a>
+                        <a href="https://trifectacapital.in/offerings/credit/">
+                          <img src="https://praveen-terralogic.github.io/capital/imgs/UDaan.png" alt=""
+                            style="width:35%; max-width: 600px; height: auto; display: block;">
+                        </a>
                       </td>
                     </tr>
                     <tr>
                       <td class="text-services">
                         <p>Udaan - Enabled access to a low cost pool of capital, to sustain momentum on growth in their
-                          journey to the IPO
-                        </p>
+                          journey to the IPO </p>
+                          </td>
+                          </tr>
+                          </table>
+                          </td>
+                          <td valign="top" width="50%" style="padding-top:17px; padding-left: 68px; padding-right: 88px;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                              <tr>
+                                <td class="icon">
+                        <a href="https://trifectacapital.in/offerings/credit/">
+                          <img src="https://praveen-terralogic.github.io/capital/imgs/Zepto.png" alt=""
+                            style="width:35%; max-width: 600px; height: auto; display: block;">
+                        </a>
                         </td>
                         </tr>
+                        <tr>
+                          <td class="text-services">
+                            <p>Enabled national expansion of Zepto by helping it build dark stores pan-India</p>
+                          </td>
+                        </tr>
                         </table>
-                        </td>
-                        <td valign="top" width="50%" style="padding-top:17px; padding-left: 68px; padding-right: 88px;">
-                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                            <tr>
-                              <td class="icon">
-                                <a href="https://trifectacapital.in/offerings/credit/"> <img
-                                    src="https://praveen-terralogic.github.io/capital/imgs/Zepto.png" alt=""
-                                    style="width:35%; max-width: 600px; height: auto; display: block;"></a>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="text-services">
-                                <p>Enabled national expansion of Zepto by helping it build dark stores pan-India</p>
-                              </td>
-                            </tr>
-                          </table>
                         </td>
                         </tr>
                         <tr>
@@ -507,35 +546,36 @@
                             <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                               <tr>
                                 <td class="icon">
-                                  <a href="https://trifectacapital.in/offerings/credit/"> <img
-                                      src="https://praveen-terralogic.github.io/capital/imgs/slice.png" alt=""
-                                      style="width:35%; max-width: 600px; height: auto; display: block;"></a>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td class="text-services">
-                                  <p>Supported expansion of user base and the corresponding growth in AUM</p>
-                                </td>
-                              </tr>
-                            </table>
+                        <a href="https://trifectacapital.in/offerings/credit/">
+                          <img src="https://praveen-terralogic.github.io/capital/imgs/slice.png" alt=""
+                            style="width:35%; max-width: 600px; height: auto; display: block;">
+                        </a>
+                        </td>
+                        </tr>
+                        <tr>
+                          <td class="text-services">
+                            <p>Supported expansion of user base and the corresponding growth in AUM</p>
                           </td>
-                          <td valign="top" width="50%" style="padding-top: 17px; padding-left: 68px; padding-right: 88px;">
-                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                              <tr>
-                                <td class="icon">
-                                  <a href="https://trifectacapital.in/offerings/credit/"> <img
-                                      src="https://praveen-terralogic.github.io/capital/imgs/Waycool.png" alt=""
-                                      style="width:35%; max-width: 600px; height: auto; display: block;"></a>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td class="text-services">
-                                  <p>Helped Waycool to vertically integrate by acquiring a company and thus improve margins
-                                  </p>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
+                        </tr>
+                        </table>
+                        </td>
+                        <td valign="top" width="50%" style="padding-top: 17px; padding-left: 68px; padding-right: 88px;">
+                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr>
+                              <td class="icon">
+                        <a href="https://trifectacapital.in/offerings/credit/">
+                          <img src="https://praveen-terralogic.github.io/capital/imgs/Waycool.png" alt=""
+                            style="width:35%; max-width: 600px; height: auto; display: block;">
+                        </a>
+                        </td>
+                        </tr>
+                        <tr>
+                          <td class="text-services">
+                        <p>Helped Waycool to vertically integrate by acquiring a company and thus improve margins </p>
+                        </td>
+                        </tr>
+                        </table>
+                        </td>
                         </tr>
                         </table>
                         </td>
@@ -553,35 +593,22 @@
                 <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                   <tr>
                     <td class="investment">
-                      <a href="https://trifectacapital.in/offerings/credit/"> <img
-                          src="https://praveen-terralogic.github.io/capital/imgs/logos-group1.png" alt=""
-                          style="width: 100%;"></a>
-                      <!-- <ul class="investment-logos">
-                        <li class=" logos-1"> <a href="https://trifectacapital.in/offerings/credit/"><img
-                              src="https://praveen-terralogic.github.io/capital/imgs/Gigforce.png" alt=""></a></li>
-                        <li class="logos-1"><a href="https://trifectacapital.in/offerings/credit/"> <img
-                              src="https://praveen-terralogic.github.io/capital/imgs/Fashinza.png" alt=""></a></li>
-                        <li class="logos-1"> <a href="https://trifectacapital.in/offerings/credit/"><img
-                              src="https://praveen-terralogic.github.io/capital/imgs/Chqbook.png" alt=""></a></li>
-                        <li class="logos-1"> <a href="https://trifectacapital.in/offerings/credit/"> <img
-                              src="https://praveen-terralogic.github.io/capital/imgs/image-14.png" alt=""></a></li>
-                        <li class="logos-1"> <a href="https://trifectacapital.in/offerings/credit/"><img
-                              src="https://praveen-terralogic.github.io/capital/imgs/IU.png" alt=""></a></li>
-                        <li class="logos-1"> <a href="https://trifectacapital.in/offerings/credit/"><img
-                              src="https://praveen-terralogic.github.io/capital/imgs/Logo-(1).png" alt=""></a></li>
-                        <li class="logos-1"> <a href="https://trifectacapital.in/offerings/credit/"><img
-                              src="https://praveen-terralogic.github.io/capital/imgs/image-6.png" alt=""></a></li>
-                        <li class="logos-1"> <a href="https://trifectacapital.in/offerings/credit/"> <img
-                              src="https://praveen-terralogic.github.io/capital/imgs/image-7.png" alt=""></a></li>
-                        <li class="logos-1"> <a href="https://trifectacapital.in/offerings/credit/"><img
-                              src="https://praveen-terralogic.github.io/capital/imgs/image-12.png" alt=""></a></li>
-                        <li class="logos-1"> <a href="https://trifectacapital.in/offerings/credit/"><img
-                              src="https://praveen-terralogic.github.io/capital/imgs/image-10.png" alt=""></a></li>
-                        <li class="logos-1"> <a href="https://trifectacapital.in/offerings/credit/"> <img
-                              src="https://praveen-terralogic.github.io/capital/imgs/FableStreet.png" alt=""></a></li>
-                        <li class="logos-1"> <a href="https://trifectacapital.in/offerings/credit/"> <img
-                              src="https://praveen-terralogic.github.io/capital/imgs/image-13.png" alt=""></a></li>
-                      </ul> -->
+                      <a href="https://trifectacapital.in/offerings/credit/">
+                        <img src="https://praveen-terralogic.github.io/capital/imgs/logos-group1.png" alt="" style="width: 100%;">
+                      </a>
+                      <!-- <ul class="investment-logos"><li class=" logos-1"><a href="https://trifectacapital.in/offerings/credit/"><img
+                                                                                                                      src="https://praveen-terralogic.github.io/capital/imgs/Gigforce.png" alt=""></a></li><li class="logos-1"><a href="https://trifectacapital.in/offerings/credit/"><img
+                                                                                                                      src="https://praveen-terralogic.github.io/capital/imgs/Fashinza.png" alt=""></a></li><li class="logos-1"><a href="https://trifectacapital.in/offerings/credit/"><img
+                                                                                                                      src="https://praveen-terralogic.github.io/capital/imgs/Chqbook.png" alt=""></a></li><li class="logos-1"><a href="https://trifectacapital.in/offerings/credit/"><img
+                                                                                                                      src="https://praveen-terralogic.github.io/capital/imgs/image-14.png" alt=""></a></li><li class="logos-1"><a href="https://trifectacapital.in/offerings/credit/"><img
+                                                                                                                      src="https://praveen-terralogic.github.io/capital/imgs/IU.png" alt=""></a></li><li class="logos-1"><a href="https://trifectacapital.in/offerings/credit/"><img
+                                                                                                                      src="https://praveen-terralogic.github.io/capital/imgs/Logo-(1).png" alt=""></a></li><li class="logos-1"><a href="https://trifectacapital.in/offerings/credit/"><img
+                                                                                                                      src="https://praveen-terralogic.github.io/capital/imgs/image-6.png" alt=""></a></li><li class="logos-1"><a href="https://trifectacapital.in/offerings/credit/"><img
+                                                                                                                      src="https://praveen-terralogic.github.io/capital/imgs/image-7.png" alt=""></a></li><li class="logos-1"><a href="https://trifectacapital.in/offerings/credit/"><img
+                                                                                                                      src="https://praveen-terralogic.github.io/capital/imgs/image-12.png" alt=""></a></li><li class="logos-1"><a href="https://trifectacapital.in/offerings/credit/"><img
+                                                                                                                      src="https://praveen-terralogic.github.io/capital/imgs/image-10.png" alt=""></a></li><li class="logos-1"><a href="https://trifectacapital.in/offerings/credit/"><img
+                                                                                                                      src="https://praveen-terralogic.github.io/capital/imgs/FableStreet.png" alt=""></a></li><li class="logos-1"><a href="https://trifectacapital.in/offerings/credit/"><img
+                                                                                                                      src="https://praveen-terralogic.github.io/capital/imgs/image-13.png" alt=""></a></li></ul> -->
                     </td>
                   </tr>
                 </table>
@@ -603,9 +630,10 @@
                   <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                     <tr>
                       <td style="padding-right: 10px;">
-                        <a href="https://trifectacapital.in/offerings/equity/"><img
-                            src="https://praveen-terralogic.github.io/capital/imgs/Logo-(1).png" alt=""
-                            style="width: 72%; max-width: 600px; height: auto; display: block;"></a>
+                        <a href="https://trifectacapital.in/offerings/equity/">
+                          <img src="https://praveen-terralogic.github.io/capital/imgs/Logo-(1).png" alt=""
+                            style="width: 72%; max-width: 600px; height: auto; display: block;">
+                        </a>
                       </td>
                     </tr>
                   </table>
@@ -621,15 +649,14 @@
                           support the company in its scale-up journey across India in this large consumption category.
                         </p>
                         <p>with this investment, the total number of portfolio companies in the equity fund has grown to
-                          10.
-                        </p>
-                        </td>
-                        </tr>
-                        </table>
-                        </td>
-                        </tr>
-                        </table>
-                        </td>
+                          10. </p>
+                          </td>
+                          </tr>
+                          </table>
+                          </td>
+                          </tr>
+                          </table>
+                          </td>
         </tr>
         <!-- end: tr -->
         <tr style="background:#FFFFFF" ;>
@@ -649,16 +676,15 @@
                         <div class="heading-section">
                           <p>Through financial advisory practice we empower finance teams of startups with expert
                             advice, customer technology and a powerful network. The flagship treasury platform has
-                            received more than Rs. 7,000Cr of capital float to be managed.
-                          </p>
-                          </div>
-                          </td>
-                          </tr>
-                          </table>
-                          </td>
-                          </tr>
-                          </table>
-                          </td>
+                            received more than Rs. 7,000Cr of capital float to be managed. </p>
+                            </div>
+                            </td>
+                            </tr>
+                            </table>
+                            </td>
+                            </tr>
+                            </table>
+                            </td>
         </tr>
         <!-- end: tr -->
         <tr>
@@ -674,46 +700,27 @@
                   <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                     <tr>
                       <td>
-                        <a href="https://trifectacapital.in/offerings/advisory/"><img
-                            src="https://praveen-terralogic.github.io/capital/imgs/logos-group2.png" alt=""
-                            style="width: 100%;"></a>
-                        <!-- <ul class="platform-logos" style="list-style-type:none ; margin: 0px; padding: 0px;">
-                          <li class="logos-2"><a href="https://trifectacapital.in/offerings/advisory/"><img
+                        <a href="https://trifectacapital.in/offerings/advisory/">
+                          <img src="https://praveen-terralogic.github.io/capital/imgs/logos-group2.png" alt="" style="width: 100%;">
+                        </a>
+                        <!-- <ul class="platform-logos" style="list-style-type:none ; margin: 0px; padding: 0px;"><li class="logos-2"><a href="https://trifectacapital.in/offerings/advisory/"><img
                                 src="https://praveen-terralogic.github.io/capital/imgs/presentation1.png"
-                                alt=""></a>
-                          </li>
-                          <li class="logos-2"><a href="https://trifectacapital.in/offerings/advisory/"><img
+                                alt=""></a></li><li class="logos-2"><a href="https://trifectacapital.in/offerings/advisory/"><img
                                 src="https://praveen-terralogic.github.io/capital/imgs/presentation2.png"
-                                alt=""></a>
-                          </li>
-                          <li class="logos-2"> <a href="https://trifectacapital.in/offerings/advisory/"><img
+                                alt=""></a></li><li class="logos-2"><a href="https://trifectacapital.in/offerings/advisory/"><img
                                 src="https://praveen-terralogic.github.io/capital/imgs/presentation3.png"
-                                alt=""></a>
-                          </li>
-                          <li class="logos-2"> <a href="https://trifectacapital.in/offerings/advisory/"><img
+                                alt=""></a></li><li class="logos-2"><a href="https://trifectacapital.in/offerings/advisory/"><img
                                 src="https://praveen-terralogic.github.io/capital/imgs/presentation4.png"
-                                alt=""></a>
-                          </li>
-                          <li class="logos-2"><a href="https://trifectacapital.in/offerings/advisory/"><img
+                                alt=""></a></li><li class="logos-2"><a href="https://trifectacapital.in/offerings/advisory/"><img
                                 src="https://praveen-terralogic.github.io/capital/imgs/presentation5.png"
-                                alt=""></a>
-                          </li>
-                          <li class="logos-2"> <a href="https://trifectacapital.in/offerings/advisory/"><img
-                                src="https://praveen-terralogic.github.io/capital/imgs/FableStreet.png" alt=""></a>
-                          </li>
-                          <li class="logos-2"> <a href="https://trifectacapital.in/offerings/advisory/"><img
+                                alt=""></a></li><li class="logos-2"><a href="https://trifectacapital.in/offerings/advisory/"><img
+                                src="https://praveen-terralogic.github.io/capital/imgs/FableStreet.png" alt=""></a></li><li class="logos-2"><a href="https://trifectacapital.in/offerings/advisory/"><img
                                 src="https://praveen-terralogic.github.io/capital/imgs/presentation6.png"
-                                alt=""></a>
-                          </li>
-                          <li class="logos-2"> <a href="https://trifectacapital.in/offerings/advisory/"><img
+                                alt=""></a></li><li class="logos-2"><a href="https://trifectacapital.in/offerings/advisory/"><img
                                 src="https://praveen-terralogic.github.io/capital/imgs/presentation7.png"
-                                alt=""></a>
-                          </li>
-                          <li class="logos-2"><a href="https://trifectacapital.in/offerings/advisory/"><img
+                                alt=""></a></li><li class="logos-2"><a href="https://trifectacapital.in/offerings/advisory/"><img
                                 src="https://praveen-terralogic.github.io/capital/imgs/presentation8.png"
-                                alt=""></a>
-                          </li>
-                        </ul> -->
+                                alt=""></a></li></ul> -->
                       </td>
                     </tr>
                   </table>
@@ -735,9 +742,10 @@
                     <tr>
                       <td>
                         <a
-                          href="https://www.livemint.com/companies/news/electric-mobility-offers-massive-investment-opportunities-11659632110009.html"><img
-                            src="https://praveen-terralogic.github.io/capital/imgs/Mint-Conclave.png" alt=""
-                            style="width: 100%; max-width: 600px; height: auto; margin: auto; margin-bottom: 20px; display: block;"></a>
+                          href="https://www.livemint.com/companies/news/electric-mobility-offers-massive-investment-opportunities-11659632110009.html">
+                          <img src="https://praveen-terralogic.github.io/capital/imgs/Mint-Conclave.png" alt=""
+                            style="width: 100%; max-width: 600px; height: auto; margin: auto; margin-bottom: 20px; display: block;">
+                        </a>
                       </td>
                     </tr>
                     <tr>
@@ -749,43 +757,38 @@
                           and EV being more dependent on software there is large potential for EV-related software
                           innovation. Massive investment opportunities will be opened up as increasing interest from
                           startups, OEMs, regulators and investors is observed in the EV space.” - Nilesh Kothari,
-                          Managing Partner Trifecta Capital
-                        </p>
+                          Managing Partner Trifecta Capital </p>
+                          </td>
+                          </tr>
+                          </table>
+                          </td>
+                          <td valign="top" width="48%" style="padding: 40px 40px 100px 20px;background: #162C55;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                              <tr>
+                                <td>
+                        <a href="https://twitter.com/TrifectaCap/status/1546410234670829568?s=20&t=h2J2DixeMcKk8a3F44__bQ">
+                          <img src="https://praveen-terralogic.github.io/capital/imgs/BWB.png" alt=""
+                            style="width: 100%; max-width: 600px;height:100%; object-fit: cover; margin: auto; margin-bottom: 20px; display: block;">
+                        </a>
                         </td>
                         </tr>
-                        </table>
-                        </td>
-                        <td valign="top" width="48%" style="padding: 40px 40px 100px 20px;background: #162C55;">
-                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                            <tr>
-                              <td>
-                                <a href="https://twitter.com/TrifectaCap/status/1546410234670829568?s=20&t=h2J2DixeMcKk8a3F44__bQ"><img
-                                    src="https://praveen-terralogic.github.io/capital/imgs/BWB.png" alt=""
-                                    style="width: 100%; max-width: 600px;height:100%; object-fit: cover; margin: auto; margin-bottom: 20px; display: block;"></a>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="text-testimony">
-                                <h3 class="name">Brunch With Builders - hosted by Trifecta <br> Capital</h3>
+                        <tr>
+                          <td class="text-testimony">
+                        <h3 class="name">Brunch With Builders - hosted by Trifecta <br> Capital </h3>
                         <p style="text-align: left;">“There will be phases in the company life without capital. And then
                           phases with a lot of capital. Latter is time to be more aggressive and opportunistic. Or it
                           would be a disservice to the company. Adapt to the market scenario and alter strategy basis
                           the cost of capital. If you are conservative when the cost of capital is low, someone will
-                          come and take away market share.” - Vidit Atrey, Founder & CEO Meesho
-                        </p>
-                        </td>
-                        </tr>
-                        </table>
-                        </td>
-                        </tr>
-                        </table>
-                        </td>
+                          come and take away market share.” - Vidit Atrey, Founder & CEO Meesho </p>
+                          </td>
+                          </tr>
+                          </table>
+                          </td>
+                          </tr>
+                          </table>
+                          </td>
         </tr>
         <!-- end: tr -->
-      </table>
-      </td>
-      </tr><!-- end:tr -->
-      <!-- 1 Column Text + Button : END -->
       </table>
       <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
         <tr>
@@ -801,10 +804,10 @@
                   <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
                     <tr>
                       <td>
-                        <a href="https://www.youtube.com/watch?v=noHXRxAvRCk&t=241s"> <img
-                            src="https://praveen-terralogic.github.io/capital/imgs/youtube1.png"
-                            alt=""
-                            style="width: 100%; max-width: 600px; height: auto; margin: auto; margin-bottom: 20px; display: block;"></a>
+                        <a href="https://www.youtube.com/watch?v=noHXRxAvRCk&t=241s">
+                          <img src="https://praveen-terralogic.github.io/capital/imgs/youtube1.png" alt=""
+                            style="width: 100%; max-width: 600px; height: auto; margin: auto; margin-bottom: 20px; display: block;">
+                        </a>
                       </td>
                     </tr>
                     <tr>
@@ -812,20 +815,19 @@
                         <span class="name">Shashank Mehta, The Whole Truth</span>
                         <p style="text-align: left;">Shashank Mehta, founder of The Whole Truth gives us a play by play
                           rundown on what it takes to build a consumer brand from scratch, while in conversation with
-                          Rajat Agarwal, MD, Matrix India.
-                        </p>
-                        </td>
-                        </tr>
-                        </table>
-                        </td>
-                        <td valign="top" width="48%" style="padding-top: 20px; padding-right: 0px; padding-left: 20px; background:#EB6F5A;">
-                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                            <tr>
-                              <td>
-                                <a href="https://www.youtube.com/watch?v=7KdPwYK_xwU&t=424s"><img
-                            src="https://praveen-terralogic.github.io/capital/imgs/youtube1.png"
-                            alt=""
-                            style="width: 100%; max-width: 600px; height: auto; margin: auto; margin-bottom: 20px; display: block;"></a>
+                          Rajat Agarwal, MD, Matrix India. </p>
+                          </td>
+                          </tr>
+                          </table>
+                          </td>
+                          <td valign="top" width="48%" style="padding-top: 20px; padding-right: 0px; padding-left: 20px; background:#EB6F5A;">
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                              <tr>
+                                <td>
+                        <a href="https://www.youtube.com/watch?v=7KdPwYK_xwU&t=424s">
+                          <img src="https://praveen-terralogic.github.io/capital/imgs/youtube1.png" alt=""
+                            style="width: 100%; max-width: 600px; height: auto; margin: auto; margin-bottom: 20px; display: block;">
+                        </a>
                       </td>
                     </tr>
                     <tr>
@@ -833,52 +835,62 @@
                         <span class="name">Alakh Pandey, Physics Wallah</span>
                         <p style="text-align: left;">Alakh Pandey, founder of Physics Wallah opens up on his struggles,
                           his outsized dreams, and how he set about chasing his destiny in conversation with Shradha
-                          Sharma, YourStory.
-                        </p>
-                        </td>
-                        </tr>
-                        </table>
-                        </td>
-                        </tr>
-                        </table>
-                        <tr class="footer-content">
+                          Sharma, YourStory. </p>
+                          </td>
+                          </tr>
+                          </table>
+                          </td>
+                          </tr>
+                          </table>
+                          <tr class="footer-content">
           <td style="padding: 30px 44px 10px 44px; background:#EB6F5A; text-align: center; ">
             <table>
               <tr>
                 <td class="footer-email">
                   <p>Our mailing address is: </p>
-                  <p class="email"><a href="mailto:info@trifectacapital.in" style="color: white;"">info@trifectacapital.in</a></p>
-                                                                       
-                </td>
-              </tr>
-              <tr>
-                <td class="footer-text" style="padding-top: 20px;">
-                  <p>Want to change how you receive these emails? <br>You can update your preferences or unsubscribe
-                    from this list.
-                  </p>
-                  </td>
-                  </tr>
+                  <p class="email">
+                    <a href="mailto:info@trifectacapital.in" style="color: white;"">info@trifectacapital.in</a>
+                                                                        																																							</p>
+                                                                        																																						</td>
+                                                                        																																					</tr>
+                                                                        																																					<tr>
+                                                                            <td class=" footer-text" style="padding-top: 20px;">
+                                                                              <p>Want to change how you receive these emails? <br>You can update your preferences or unsubscribe
+                        from this list. </p>
+                        </td>
+                        </tr>
               <tr class="emailus">
                 <td style="padding-top:20px ;">
                   <p>Website </p>
-                  <p class="link"><a href="mailto:info@trifectacapital.in"
-                      style="color: white; text-decoration-line: underline;">trifectacapital.in</a></p>
+                  <p class="link">
+                    <a href="mailto:info@trifectacapital.in" style="color: white; text-decoration-line: underline;">trifectacapital.in</a>
+                  </p>
                 </td>
               </tr>
-              </table>
-              </td>
-              </tr>
-              <tr>
-                <td valign="top" style="padding-top: 20px; background:#EB6F5A;" class="social-media">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                    <tr>
-                      <td style="background:#EB6F5A; text-align: center;">
+            </table>
+            </td>
+            </tr>
+            <tr>
+              <td valign="top" style="padding-top: 20px; background:#EB6F5A;" class="social-media">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+                    <td style="background:#EB6F5A; text-align: center;">
                   <ul style="list-style-type: none; padding-bottom:30px;padding-left: 0px;">
-                    <li><a href="#"><img src="https://praveen-terralogic.github.io/capital/imgs/twitter.png" alt="twitter"></a>
+                    <li>
+                      <a href="#">
+                        <img src="https://praveen-terralogic.github.io/capital/imgs/twitter.png" alt="twitter">
+                      </a>
                     </li>
-                    <li><a href="#"><img src="https://praveen-terralogic.github.io/capital/imgs/linkedin.png" alt="linkedin"></a>
+                    <li>
+                      <a href="#">
+                        <img src="https://praveen-terralogic.github.io/capital/imgs/linkedin.png" alt="linkedin">
+                      </a>
                     </li>
-                    <li><a href="#"><img src="https://praveen-terralogic.github.io/capital/imgs/link.png" alt="link"></a></li>
+                    <li>
+                      <a href="#">
+                        <img src="https://praveen-terralogic.github.io/capital/imgs/link.png" alt="link">
+                      </a>
+                    </li>
                     </ul>
                     </td>
                     </tr>

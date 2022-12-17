@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+    xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+    <meta charset="utf-8">
+    <!-- <meta name="color-scheme" content="light"> -->
+    <meta name="supported-color-schemes" content="light">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="x-apple-disable-message-reformatting">
+    <meta name="color-scheme" content="light dark">
+    <title></title>
+    <!-- CSS Reset : BEGIN -->
+    <style>
+        :root {
+            color-scheme: light only;
+        }
+
+        html,
+        body {
+            margin: 0 auto !important;
+            padding: 0 !important;
+            height: 100% !important;
+            width: 100% !important;
+            background: #F5F5F5;
+        }
+
+        /* What it does: Stops email clients resizing small text. */
+        * {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        /* What it does: Centers email on Android 4.4 */
+        div[style*="margin: 16px 0"] {
+            margin: 0 !important;
+        }
+
+        /* What it does: Stops Outlook from adding extra spacing to tables. */
+        table,
+        td {
+            mso-table-lspace: 0pt !important;
+            mso-table-rspace: 0pt !important;
+        }
+
+        /* What it does: Fixes webkit padding issue. */
+        table {
+            border-spacing: 0 !important;
+            border-collapse: collapse !important;
+            table-layout: fixed !important;
+            margin: 0 auto !important;
+        }
+
+        /* What it does: Uses a better rendering method when resizing images in IE. */
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+        a {
+            text-decoration: none;
+        }
+
+        /* What it does: A work-around for email clients meddling in triggered links. */
+        *[x-apple-data-detectors],
+        /* iOS */
+        .unstyle-auto-detected-links *,
+        .aBn {
+            border-bottom: 0 !important;
+            cursor: default !important;
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+        .a6S {
+            display: none !important;
+            opacity: 0.01 !important;
+        }
+
+        /* What it does: Prevents Gmail from changing the text color in conversation threads. */
+        .im {
+            color: inherit !important;
+        }
+
+        /* If the above doesn't work, add a .g-img class to any image in question. */
+        img.g-img+div {
+            display: none !important;
+        }
+
+        /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+        /* Create one of these media queries for each additional viewport size you'd like to fix */
+        /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+        @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+            u~div .email-container {
+                min-width: 320px !important;
+            }
+
+            .hero h1 {
+                font-size: 20px !important;
+            }
+        }
+
+        /* iPhone 6, 6S, 7, 8, and X */
+        @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+            u~div .email-container {
+                min-width: 375px !important;
+            }
+
+            .hero h1 {
+                font-size: 25px !important;
+            }
+        }
+
+        /* iPhone 6+, 7+, and 8+ */
+        @media only screen and (min-device-width: 414px) {
+            u~div .email-container {
+                min-width: 414px !important;
+            }
+
+            .hero h1 {
+                font-size: 25px;
+            }
+        }
+    </style>
+    <!-- CSS Reset : END -->
+    <!-- Progressive Enhancements : BEGIN -->
+    <style>
+        @font-face {
+            font-family: "Avenir";
+            src: url("https://praveen-terralogic.github.io/capital/font/Avenir-Book.woff") format('woff');
+        }
+
+        @font-face {
+            font-family: "Avenir";
+            src: url("https://praveen-terralogic.github.io/capital/font/Avenir-Black.woff") format('woff');
+            font-weight: bold;
+        }
+
+        body {
+            font-family: Avenir !important;
+        }
+
+        h1 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 38px;
+            line-height: 0px;
+            text-align: center;
+            color: #162C55;
+            margin-top: 0;
+        }
+
+        .email-container {
+            overflow-x: hidden !important;
+        }
+
+        table {}
+
+        /*LOGO*/
+        .logo h1 {
+            margin: 0;
+        }
+
+        .logo h1 a {
+            color: #000;
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        /*HERO*/
+        .hero {
+            position: relative;
+        }
+
+        .hero img {}
+
+        .vol-1 {
+            font-weight: 800;
+            font-size: 12px;
+            line-height: 16px;
+            color: #162C55;
+            text-align: right;
+        }
+
+        /* crad class */
+        .card p {
+            color: #FFFFFF;
+            font-family: 'Avenir';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+        }
+
+        .card p span {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .card-content p {
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 15px;
+            color: #000000;
+        }
+
+        .heading-section h2 {
+            font-family: 'Avenir';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            color: #E24929;
+            margin: 0px;
+        }
+
+        .heading-section-2 h3 {
+            font-family: 'Avenir';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            color: #E24929;
+            margin: 0px;
+        }
+
+        /*SERVICES*/
+        .text-services {
+            text-align: left;
+            padding-bottom: 20px;
+        }
+
+        .text-services1 {
+            padding-right: 50px;
+        }
+
+        .text-services2 {
+            padding-left: 50px;
+        }
+
+        .text-services p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 12px;
+            color: #000000;
+        }
+
+        /* other investiments */
+        .new-investements p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16px;
+            color: #E24929;
+        }
+
+        /* Leadership */
+        .Leadership h2 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 27px;
+            color: #FFFFFF;
+            margin: 0px;
+        }
+
+        .Leadership p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 10px;
+            line-height: 150%;
+            color: #FFFFFF;
+        }
+
+        .Leadership h3 {
+            font-family: 'Avenir';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 16px;
+            color: #FFFFFF;
+        }
+
+        .investment-logos {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .social-media li {
+            height: auto;
+            padding: 4px;
+            border-radius: 50%;
+            text-align: center;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        .social-media li img {
+            max-width: 16px;
+        }
+
+        .name {
+            font-family: 'Avenir';
+            font-style: bold;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 19px;
+            color: #FFFFFF;
+        }
+
+        .footer-content p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 8px;
+            line-height: 125%;
+            text-align: center;
+            color: #FFFFFF;
+            margin: 0px;
+        }
+
+        .footer-content.email {
+            font-weight: 600;
+            font-size: 8px;
+            line-height: 125%;
+            text-align: center;
+            color: #FFFFFF;
+            margin: 0px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .logos-1 {
+            width: 32%;
+            /* padding: 0 1%; */
+            text-align: center;
+            display: inline-block;
+            margin-left: 0px;
+        }
+
+        .logos-1 a {
+            text-align: center;
+            display: inline-block;
+        }
+
+        .logos-1 img {
+            max-height: 30px;
+            max-width: 70px;
+            margin-bottom: 15px;
+            margin-top: 15px;
+        }
+
+        .logos-2 {
+            width: 19%;
+            /* padding: 0 1%; */
+            text-align: center;
+            display: inline-block;
+            margin-left: 0px;
+        }
+
+        .logos-2 a {
+            text-align: center;
+            display: inline-block;
+        }
+
+        .logos-2 img {
+            max-height: 30px;
+            max-width: 70px;
+            margin-bottom: 15px;
+            margin-top: 15px;
+        }
+
+        .text-services img {
+            width: 70px;
+            height: 30px;
+            object-fit: contain;
+        }
+
+        .container {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .pt-50 {
+            padding-top: 50px;
+        }
+
+        .pb-50 {
+            padding-bottom: 50px;
+        }
+
+        @media only screen and (max-device-width: 480px),
+        only screen and (max-width: 480px) {
+            .container {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .ivca {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
+            .pt-50 {
+                padding-top: 30px;
+            }
+
+            .pb-50 {
+                padding-bottom: 30px;
+            }
+
+            .text-services {
+                padding-left: 0;
+                padding-right: 20px;
+                text-align: left;
+            }
+
+            .counter td {
+                padding: 20px 10px !important;
+            }
+
+            .card p {
+                font-size: 12px;
+                line-height: 20px;
+            }
+
+            .card p span {
+                font-size: 14px;
+            }
+
+            .text-services1 {
+                padding-right: 10px;
+            }
+
+            .text-services2 {
+                padding-left: 10px;
+            }
+
+            .arzooo1 {
+                padding-left: 20px !important;
+                padding-right: 0px !important;
+            }
+
+            .arzooo2 {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+                padding-bottom: 0px !important;
+            }
+
+            .advisory {
+                padding: 20px 20px !important;
+            }
+
+            .advisory-new {
+                padding: 20px 20px 0px 20px !important;
+            }
+
+            .treasury {
+                padding: 40px 20px !important;
+            }
+
+            .catalysing1 {
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+                padding-bottom: 20px !important;
+            }
+
+            .catalysing11 {
+                padding-left: 0px !important;
+            }
+
+            .catalysing2 {
+                padding-left: 10px !important;
+                padding-right: 0px !important;
+                padding-bottom: 20px !important;
+            }
+        }
+    </style>
+</head>
+
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly;">
+    <center style="width: 100%;">
+        <div style="max-width: 600px; margin: 0 auto;" class="email-container" style="background: #FFFFFF; ">
+            <!-- BEGIN BODY -->
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                style="margin: auto;background: #FFFFFF!important">
+                <tr>
+                    <td valign="middle" class="hero" style="background-color:#162C55;padding: 20px 0px 0px 0px;">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="text"
+                                        style="text-align: center;width: 156px;height: 45px;margin:0px auto;">
+                                        <img src="https://praveen-terralogic.github.io/capital/imgs/Logo-Light%202.png"
+                                            alt="line" style="width: 100%;;height: 100%;">
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr style="background:#162C55;">
+                    <td class="container">
+                        <table width="100%" border="0" align="left" style="background:#162C55;">
+                            <tbody>
+                                <tr>
+                                    <td align="right"
+                                        style="font-size:10px;line-height:22px;font-weight:500;margin: 0px;color:#fff;">
+                                        December 2022</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background-color:#fff;text-align:center;">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                            <tr class="card-content">
+                                <td class="container" style="padding-top: 30px;padding-bottom: 30px;">
+                                    <!-- <p style="font-size: 10px;line-height: 15px;font-weight: 400;text-align:left;color:#000">Dear Reader,</p> -->
+                                    <p
+                                        style="font-size: 10px;line-height: 15px;font-weight: 400;text-align:left;color:#000">
+                                        We are very
+                                        excited to open a new channel of regular communication as we bring to you the
+                                        very first edition of
+                                        our newsletter. We are now more than 7 years in our journey of supporting the
+                                        new economy companies
+                                        in India. We have been fortunate to become lifecycle partners to 150+ exciting
+                                        startups with capital
+                                        and financial solutions. We hope this quarterly newsletter gives you a glimpse
+                                        into all that is
+                                        happening within this exciting community, and some of the things we think about
+                                        and spend our time
+                                        on as we continue to build our labour of love - Trifecta Capital. Since our
+                                        founding days as a
+                                        venture debt platform, we’ve come a long way. Today, we manage 3 venture debt
+                                        funds and a growth
+                                        equity fund, with amounts invested totalling ~Rs. 4,500Cr. and ~Rs 900Cr.
+                                        respectively. We also
+                                        offer a digital platform to startups to manage their treasury through our
+                                        Financial Solutions
+                                        vertical.</p>
+                                    <p
+                                        style="font-size: 10px;line-height: 15px;font-weight: 400;text-align:left;color:#000">
+                                        While seven
+                                        years is a long time to talk about, we would like to share an update on our
+                                        activities in this
+                                        fiscal year till date. Our venture debt funds invested into 35 new-economy
+                                        ventures since March
+                                        2022, across sectors and stages. We are seeing several use cases of venture debt
+                                        including working
+                                        capital, capex, inorganic growth or specific projects. The demand and quality of
+                                        opportunities for
+                                        venture debt continues to be robust. We are excited to continue investing at
+                                        levels higher than the
+                                        past years, and double down our support for the startup ecosystem as it weathers
+                                        through these
+                                        uncertain times.</p>
+                                    <p
+                                        style="font-size: 10px;line-height: 15px;font-weight: 400;text-align:left;color:#000;margin-bottom: 0px;">
+                                        We launched a Rs. 1,875Cr. growth equity fund last year called Trifecta Leaders
+                                        Fund-I. The equity
+                                        fund has been set up to continue Trifecta Capital’s role as lifecycle financiers
+                                        to the startup
+                                        ecosystem. This fund invests in category-leading technology companies in India.
+                                        With our portfolio
+                                        companies in the equity fund, we engage across multiple dimensions including
+                                        support in capital
+                                        formation initiatives, IPO preparedness, governance, strategic partnerships, and
+                                        enabling linkages
+                                        with India's old economy companies and our LP base.</p>
+                                    <p
+                                        style="font-size: 10px;line-height: 15px;font-weight: 400;text-align:left;color:#000;margin-top: 0px;">
+                                        Through our Financial Solutions offering, which was launched in 2020, we are
+                                        providing to startups
+                                        an integrated platform with digital treasury management, expert financial advice
+                                        and a powerful
+                                        network of global financial institutions. We have deployed over Rs. 7,000Cr of
+                                        capital through the
+                                        platform till date.</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                            style="background-color:#85a7ff40; ">
+                            <tr>
+                                <td valign="middle" class="card" style="text-align:center;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                                        style="background-color:#85a7ff40; color: #ffffff;">
+                                        <tr>
+                                            <td class="container" style="padding-top: 35px;">
+                                                <div class="heading-section" style="text-align: center;">
+                                                    <a href="https://trifectacapital.in/offerings/credit/">
+                                                        <p class="text-center"
+                                                            style="color: #0D3683;font-size:20px;line-height: 27px;font-weight:400;margin-top: 0px;margin-bottom: 5px;">
+                                                            Trifecta Capital Portfolio Updates</p>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="container">
+                                                <div
+                                                    style="width: 116px;background-color:#0D3683;height:3px;margin: 0px auto;border-radius: 20px;">
+                                                    <!-- <img src="https://praveen-terralogic.github.io/capital/imgs/smallline.svg" alt="line" style="width: 100%;"> -->
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="container">
+                                                <div class="heading-section"
+                                                    style="text-align:left;padding-top: 35px;border-bottom:3px solid #0D3683;">
+                                                    <a href="https://trifectacapital.in/offerings/credit/">
+                                                        <p class=""
+                                                            style="color:#0D3683;font-size:14px;line-height: 19px;font-weight:400;margin-top: 0px;margin-bottom:7px;">
+                                                            Venture Debt Fund </p>
+                                                    </a>
+                                                    <!-- <img src="https://praveen-terralogic.github.io/capital/imgs/line-red.png" alt="line" width="100%"> -->
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr class="card-content">
+                                <td class="container " style="background-color:#85a7ff40 ;padding-bottom: 25px;">
+                                    <p
+                                        style="font-size: 10px;line-height: 15px;font-weight: 400;text-align:left;color:#000">
+                                        In this
+                                        fiscal year till date, we have provided venture debt to 35 new-economy
+                                        businesses, across a variety
+                                        of consumer brands, B2B enterprise services (including SaaS, IoT, commerce,
+                                        payments and logistics),
+                                        fintech and agritech startups.</p>
+                                    <p
+                                        style="font-size: 10px;line-height: 15px;font-weight: 400;text-align:left;color:#000">
+                                        We are very
+                                        excited about EVs and clean energy, a theme that we believe is at an inflection
+                                        point of investor
+                                        interest. While we are still participating selectively and deepening our thesis
+                                        on this, expect to
+                                        see a lot more activity from us here!</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="middle" class="card" style="text-align:center;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                                        style="background-color:#85a7ff40; color: #ffffff;">
+                                        <tr>
+                                            <td>
+                                                <div class="heading-section container"
+                                                    style="text-align:left;padding-bottom: 35px;">
+                                                    <img src="https://praveen-terralogic.github.io/capital/imgs/bigflow.png"
+                                                        alt="line" width="100%">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- <tr><td valign="middle" class="card" style="text-align:center;"><table border="0" cellpadding="0" cellspacing="0" width="100%"
+                    style="background-color:#85a7ff40;color: #ffffff;"><tr><td><div class="heading-section container" style="text-align:left;padding-bottom: 55px;"><img src="https://praveen-terralogic.github.io/capital/imgs/new2.png" alt="line" width="100%"></div></td></tr></table></td></tr>              -->
+                        </table>
+                    </td>
+                </tr>
+                <tr style="background:#FFFFFF" ;>
+                    <td class="email-section" style="padding-top:35px; width: 100%;">
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr style="background-color:#FFFFFF;">
+                                <td class=" container">
+                                    <div class="heading-section"
+                                        style="text-align:left; background-color: #FFFFFF;border-bottom: 3px solid #0D3683;">
+                                        <a href="https://trifectacapital.in/offerings/advisory/">
+                                            <p
+                                                style="color:#0D3683;font-size:14px;line-height: 19px;font-weight:400;margin-top: 0px;margin-bottom:7px;">
+                                                Growth Equity Fund</p>
+                                        </a>
+                                        <!-- <img src="https://praveen-terralogic.github.io/capital/imgs/line-red.png" alt="line" width="100%"> -->
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="container">
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr style="background-color:#FFFFFF;">
+                                <td class="arzooo1" valign="top" width="30%" style="padding-top:36px;">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td style="padding-right: 20px;">
+                                                <a href="https://trifectacapital.in/offerings/equity/">
+                                                    <img src="https://praveen-terralogic.github.io/capital/imgs/arrr.png"
+                                                        alt="" style="max-width: 100%; height: auto; display: block;">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="arzooo2" valign="top" width="70%" style="padding-top:36px;">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td class="text-services" style="text-align: left;padding-bottom: 0px">
+                                                <p
+                                                    style="font-size: 10px;line-height: 15px;font-weight: 400;margin: 0px;text-align:left;color:#000">
+                                                    Since the first close in July’21, the growth equity fund has
+                                                    invested in 10 marquee tech
+                                                    companies. </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="container">
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr class="card-content">
+                                <td style="padding-top:13px">
+                                    <p
+                                        style="font-size: 10px;line-height: 15px;font-weight: 400;margin: 0px;text-align:left;color:#000">
+                                        Most recently, we invested $15mm in Arzooo, a retail tech platform focused on
+                                        the consumer
+                                        electronics and durables industry disrupting the traditional distribution
+                                        ecosystem. The Arzooo
+                                        platform allows small retailers to compete with online channels as well as gives
+                                        them the tools to
+                                        deliver a best-in-class buying and owning experience for customers. The company
+                                        already serves
+                                        10,000+ retailers. Our co-investors are Japan’s SBI Holdings and existing
+                                        investors, including
+                                        Celesta Capital and 3 Lines VC. </p>
+                                    <p>We continue to back attractive growth-stage opportunities in the Indian startup
+                                        ecosystem with this
+                                        fund.</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr style="background:#FFFFFF" ;>
+                    <td class="email-section" style="padding:0; width: 100%;">
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td>
+                                    <div class="heading-section"
+                                        style="text-align:center; padding: 0 30px 17px 30px; background-color: #FFFFFF;">
+                                        <a href="https://trifectacapital.in/offerings/advisory/">
+                                            <img src="https://praveen-terralogic.github.io/capital/imgs/group-img.png"
+                                                alt="" style="width: 100%;">
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="container" style="padding-bottom:10px"></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr style="background:#FFFFFF" ;>
+                    <td class="email-section" style="padding:0; width: 100%;">
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr style="background-color:#FFFFFF;">
+                                <td class=" container">
+                                    <div class="heading-section"
+                                        style="text-align:left; background-color: #FFFFFF;border-bottom: 3px solid #0D3683;">
+                                        <a href="https://trifectacapital.in/offerings/advisory/">
+                                            <p
+                                                style="color:#0D3683;font-size:14px;line-height: 19px;font-weight:400;margin-top: 0px;margin-bottom:7px;">
+                                                Financial Solutions Updates </p>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr style="background-color:#FFFFFF;">
+                                <td valign="middle" width="50%">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td class="text-services advisory container"
+                                                style="text-align: left; padding-bottom:25px;padding-top: 25px;">
+                                                <div class="heading-section">
+                                                    <p
+                                                        style="font-size: 10px;line-height: 15px;font-weight: 400;margin: 0px;text-align:left;">
+                                                        Our Financial Solutions platform solves financial engineering
+                                                        gaps that CFOs face in
+                                                        managing stock and flows of money. With our unique Treasury
+                                                        Management framework, we provide
+                                                        new-age companies a tech platform to manage their treasury in a
+                                                        transparent manner with
+                                                        detailed analytics and insights. </p>
+                                                    <p
+                                                        style="font-size: 10px;line-height: 15px;font-weight: 400;margin: 0px;text-align:left;">
+                                                        The
+                                                        platform offers market leading tech and research, supported by
+                                                        our deep knowledge of cash
+                                                        flow requirements in venture-backed companies, enabling optimal
+                                                        portfolio construction and
+                                                        risk management. We align with all the stakeholders incl.
+                                                        Founders, CFOs and Investors in
+                                                        offering these capital allocation and management solutions. </p>
+                                                    <p
+                                                        style="font-size: 10px;line-height: 15px;font-weight: 400;margin: 0px;text-align:left;">
+                                                        Over the last 2 years, the platform has managed treasury for
+                                                        100+ companies with Rs 7,000Cr.
+                                                        flows. 20+ unicorns are using the platform and several other
+                                                        start-ups being actively
+                                                        advised to manage capital in an efficient manner. Many VC firms
+                                                        also use the platform for
+                                                        their own capital management. </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="heading-section"
+                                        style="text-align:left; padding: 0 30px 17px 30px; background-color: #FFFFFF;">
+                                        <a href="https://trifectacapital.in/offerings/advisory/">
+                                            <p class="text-center" style="color:
+                    #0D3683;font-size:12px;line-height: 18px;font-weight:400;margin-top: 0px;margin-bottom:7px;">Select
+                                                startups using our FinSol platform</p>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="container" style="padding-bottom:42px">
+                                    <a href="https://trifectacapital.in/offerings/advisory/">
+                                        <img src="https://praveen-terralogic.github.io/capital/imgs/logoos.jpg" alt=""
+                                            style="width: 100%;">
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="email-section Leadership" style="background:#0D3683;">
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                                <td>
+                                    <table>
+                                        <tr>
+                                            <td class="container" style="padding-top: 35px;">
+                                                <div class="heading-section" style="text-align: center;">
+                                                    <a href="https://trifectacapital.in/offerings/credit/">
+                                                        <p class="text-center"
+                                                            style="color: #fff;font-size:20px;line-height: 27px;font-weight:400;margin-top: 0px;margin-bottom: 5px;">
+                                                            Our Ecosystem Engagement </p>
+                                                    </a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="container">
+                                                <div
+                                                    style="width: 116px;background-color:#fff;height:3px;margin: 0px auto;border-radius: 20px;">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr style="background:#0D3683">
+                                <td valign="middle" width="50%">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td class="text-services advisory container"
+                                                style="text-align: left; padding-bottom:40px;padding-top: 55px;">
+                                                <div class="heading-section">
+                                                    <p
+                                                        style="color:#ffff;font-size: 14px;line-height: 19px;font-weight: 400;margin: 0px;">
+                                                        We have
+                                                        been an active participant in industry bodies, panels and events
+                                                        of the Indian startup
+                                                        ecosystem. </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="container ivca" style="background:#0D3683;">
+                        <table role="presentation" border="0" cellpadding="10" cellspacing="0" width="100%"
+                            class="Leadership">
+                            <tr>
+                                <td class="catalysing2" valign="top" width="100%"
+                                    style="padding:35px 20px 30px 20px;background:#3D73FF">
+                                    <p
+                                        style="text-align: left;margin: 0px;font-size: 10px;line-height: 15px;font-weight: bold;text-align:left;">
+                                        IVCA (Indian Venture and Alternate Capital Association) announced formation of
+                                        new VC council,
+                                        co-chaired by Rahul Khanna, Trifecta Capital </p>
+                                </td>
+                            </tr>
+                        </table>
+                        <table role="presentation" border="0" cellpadding="10" cellspacing="0" width="100%"
+                            class="Leadership">
+                            <tr>
+                                <td class="catalysing2" valign="top" width="30%"
+                                    style="padding: 0px 20px 35px 20px;background:#3D73FF">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td>
+                                                <a
+                                                    href="https://www.livemint.com/companies/news/electric-mobility-offers-massive-investment-opportunities-11659632110009.html">
+                                                    <img src="https://praveen-terralogic.github.io/capital/imgs/bo2.png"
+                                                        alt=""
+                                                        style="width: 100%; max-width: 600px; height: auto; margin: auto; margin-bottom:14px; display: block;">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="catalysing1" valign="top" width="30%"
+                                    style="padding:0px 20px 35px 0px;background:#3D73FF">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td>
+                                                <p
+                                                    style="text-align: left;margin: 0px;font-size: 10px;line-height: 15px;font-weight: 400;text-align:left;">
+                                                    On this esteemed appointment, Rahul shared a few words “It’s a
+                                                    privilege to co-lead the VC
+                                                    Council of the IVCA. My aim in the new role will be to support the
+                                                    maturing of this asset
+                                                    class by providing access to best practices in capital formation,
+                                                    portfolio management,
+                                                    governance and reporting. This should particularly benefit my peers
+                                                    in the venture capital
+                                                    community especially, the emerging local managers who are helping
+                                                    fund growth and innovation
+                                                    in the Indian economy.” </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="container" style="background:#0D3683;">
+                        <table role="presentation" border="0" cellpadding="10" cellspacing="0" width="100%"
+                            class="Leadership">
+                            <tr>
+                                <td class="catalysing1" valign="top" width="30%"
+                                    style="padding:30px 0px 35px 15px;background:#0D3683">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td>
+                                                <a
+                                                    href="https://www.livemint.com/companies/news/electric-mobility-offers-massive-investment-opportunities-11659632110009.html">
+                                                    <img src="https://praveen-terralogic.github.io/capital/imgs/bo1.png"
+                                                        alt=""
+                                                        style="width: 100%; max-width: 600px; height: auto; margin: auto; margin-bottom:14px; display: block;">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p
+                                                    style="text-align: left;margin: 0px;font-size: 10px;line-height: 15px;font-weight: 400;text-align:left;">
+                                                    Mint hosts Nilesh Kothari in a panel alongside Anup Jain (Orios),
+                                                    Ankur Thadani (TPG Growth),
+                                                    Rahul Taneja (Lightspeed) at mobility conclave</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="catalysing1" valign="top" width="30%"
+                                    style="padding:30px 15px 35px 15px;background:#0D3683">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td>
+                                                <a
+                                                    href="https://www.livemint.com/companies/news/electric-mobility-offers-massive-investment-opportunities-11659632110009.html">
+                                                    <img src="https://praveen-terralogic.github.io/capital/imgs/bo3.png"
+                                                        alt=""
+                                                        style="width: 100%; max-width: 600px; height: auto; margin: auto; margin-bottom:14px; display: block;">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p
+                                                    style="text-align: left;margin: 0px;font-size: 10px;line-height: 15px;font-weight: 400;text-align:left;">
+                                                    ET Summit hosts Lavanya Ashok in a panel alongside Pankaj Makkar
+                                                    (Bertelsmann), Sanjay Swamy
+                                                    (Prime VP), Amitabh Nagpal (AWS), discussing unicorns with solid
+                                                    business models.</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="catalysing2" valign="top" width="30%"
+                                    style="padding:30px 15px 35px 0px;background:#0D3683">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td>
+                                                <a
+                                                    href="https://www.livemint.com/companies/news/electric-mobility-offers-massive-investment-opportunities-11659632110009.html">
+                                                    <img src="https://praveen-terralogic.github.io/capital/imgs/bo4.png"
+                                                        alt=""
+                                                        style="width: 100%; max-width: 600px; height: auto; margin: auto; margin-bottom:14px; display: block;">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-testimony">
+                                                <p
+                                                    style="text-align: left;margin: 0px;font-size: 10px;line-height: 15px;font-weight: 400;text-align:left;">
+                                                    Abhishek Gupta was on a panel hosted by FICCI - moderated by BCG
+                                                    Panel discussion on ‘Is a
+                                                    “true-blue” large scale digital bank in near sight for India as
+                                                    fintech offerings expand?’
+                                                </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="email-section Leadership" style="background: #9CB8FF;color:
+          #162C55">
+                        <table>
+                            <tr style="background:
+              #9CB8FF;">
+                                <td valign="middle" width="50%">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td class="text-services advisory container advisory-new"
+                                                style="text-align: left; padding-bottom:32px;padding-top:45px;">
+                                                <div class="heading-section">
+                                                    <p
+                                                        style="color:#162C55;font-size: 10px;line-height: 15px;font-weight: 400;margin: 0px;text-align:left;">
+                                                        We have also started hosting a series of closed-door
+                                                        interactions with founders of
+                                                        category-leading startups to drive meaningful conversations on
+                                                        various aspects of business
+                                                        building and scaling. </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="container">
+                                    <table role="presentation" border="0" cellpadding="10" cellspacing="0" width="100%"
+                                        class="Leadership">
+                                        <tr>
+                                            <td class="catalysing1 catalysing11" valign="top" width="48%" style="padding:23px 20px 0px 0px;background:
+                      #9CB8FF">
+                                                <table role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                                    width="100%">
+                                                    <tr>
+                                                        <td>
+                                                            <a
+                                                                href="https://www.linkedin.com/feed/update/urn:li:activity:6952176890400907264">
+                                                                <img src="https://praveen-terralogic.github.io/capital/imgs/blue1.png"
+                                                                    alt=""
+                                                                    style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td class="catalysing2" valign="top" width="48%" style="padding: 23px 0px 0px 20px;background:
+                      #9CB8FF">
+                                                <table role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                                    width="100%">
+                                                    <tr>
+                                                        <td class="text-testimony">
+                                                            <div style="text-align:left;width:40%;margin-bottom: 5px;">
+                                                                <img src="https://praveen-terralogic.github.io/capital/imgs/meesho.png"
+                                                                    alt="line" width="100%">
+                                                            </div>
+                                                            <p class="name" style="font-size: 9px;line-height: 10px;font-weight:800;margin-top: 0px!important;color:
+                              #162C55">Vidit Aatrey, Co-founder and CEO </h3>
+                                                            <p style="font-size: 10px;line-height: 12px;font-weight: 400;margin: 0px;text-align:left;color:
+                              #162C55"> “There will be phases in the company life without capital. And then phases with
+                                                                a lot of capital. Latter is time to be more aggressive
+                                                                and opportunistic” </p>
+                                                            <a href="https://youtu.be/VMQtzVn3qj8" style="font-weight: 800; color:
+                                #162C55;font-size: 9px;line-height: 15px;font-style: italic;">Read more</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="container" style="padding-bottom:30px">
+                                    <table role="presentation" border="0" cellpadding="10" cellspacing="0" width="100%"
+                                        class="Leadership">
+                                        <tr>
+                                            <td class="catalysing1 catalysing11" valign="top" width="48%" style="padding: 23px 20px 0px 0px;background:
+                      #9CB8FF">
+                                                <table role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                                    width="100%">
+                                                    <tr>
+                                                        <td>
+                                                            <a href="https://youtu.be/VMQtzVn3qj8">
+                                                                <img src="https://praveen-terralogic.github.io/capital/imgs/blue2.png"
+                                                                    alt=""
+                                                                    style="width: 100%; max-width: 600px; height: auto; margin: auto; margin-bottom: 20px; display: block;">
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td class="catalysing2" valign="top" width="48%" style="padding: 23px 0px 0px 20px;background:
+                      #9CB8FF;">
+                                                <table role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                                    width="100%">
+                                                    <tr>
+                                                        <td class="text-testimony">
+                                                            <div style="text-align:left;width:40%;margin-bottom: 5px;">
+                                                                <img src="https://praveen-terralogic.github.io/capital/imgs/god.png"
+                                                                    alt="line" width="100%">
+                                                            </div>
+                                                            <p class="name" style="font-size: 9px;line-height: 10px;font-weight:800;margin-top: 0px!important;color:
+                              #162C55">Darpan Sanghvi, Group Founder and CEO </p>
+                                                            <p style="font-size: 10px;line-height: 12px;font-weight: 400;margin: 0px;text-align:left;color:
+                              #162C55"> “You cannot beat the current, so you have to go in the direction of the
+                                                                current. .. Similarly when you see the momentum is
+                                                                strong then you run like you’ve run
+                                                                never before and try to get ahead of it. Therefore,
+                                                                always be mindful of macro currents
+                                                                and then just be ahead of that” </p>
+                                                            <a href="https://youtu.be/VMQtzVn3qj8" style="font-weight: 800; color:
+                                #162C55;font-size: 9px;line-height: 15px;">Watch the interview highlights</a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="container" style=" background:#162C55;padding-top: 37px;padding-bottom: 20px;">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="heading-section" style="text-align: center;">
+                                        <a href="https://trifectacapital.in/offerings/credit/">
+                                            <p class="text-center"
+                                                style="color: #fff;font-size:20px;line-height: 27px;font-weight:400;margin-top: 0px;margin-bottom: 5px;">
+                                                Our Playlist </p>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="container" style="padding-bottom: 35px;">
+                                    <div
+                                        style="width:35px;background-color:#fff;height:3px;margin: 0px auto;border-radius: 20px;">
+                                        <!-- <img src="https://praveen-terralogic.github.io/capital/imgs/smallline.svg" alt="line" style="width: 100%;"> -->
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <table role="presentation" border="0" cellpadding="10" cellspacing="0" width="100%"
+                            class="Leadership">
+                            <tr>
+                                <td class="catalysing1" valign="top" width="48%"
+                                    style="padding: 0px 20px 0px 0px;background:#162C55">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td>
+                                                <a href="https://www.youtube.com/watch?v=noHXRxAvRCk">
+                                                    <img src="https://praveen-terralogic.github.io/capital/imgs/you1.png"
+                                                        alt=""
+                                                        style="width: 100%; max-width: 600px; height: auto; margin: auto; margin-bottom:14px; display: block;">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="Leadership">
+                                                <span class="name">Shashank Mehta, The Whole Truth</span>
+                                                <p
+                                                    style="text-align: left;font-size: 10px;line-height: 15px;font-weight: 400;text-align:left">
+                                                    Shashank Mehta, founder of The Whole Truth gives us a play by play
+                                                    rundown on what it takes to
+                                                    build a consumer brand from scratch, while in conversation with
+                                                    Rajat Agarwal, MD, Matrix
+                                                    India.</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td class="catalysing2" valign="top" width="48%"
+                                    style="padding: 0px 0px 0px 20px;background:#162C55#162C55">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td>
+                                                <a href="https://www.youtube.com/watch?v=7KdPwYK_xwU">
+                                                    <img src="https://praveen-terralogic.github.io/capital/imgs/you2.png"
+                                                        alt=""
+                                                        style="width: 100%; max-width: 600px; height: auto; margin: auto; margin-bottom:14px; display: block;">
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="Leadership">
+                                                <span class="name">Alakh Pandey, Physics Wallah</span>
+                                                <p
+                                                    style="text-align: left;font-size: 10px;line-height: 15px;font-weight: 400;text-align:left;">
+                                                    Alakh Pandey, founder of Physics Wallah opens up on his struggles,
+                                                    his outsized dreams, and
+                                                    how he set about chasing his destiny in conversation with Shradha
+                                                    Sharma, YourStory.</p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                style="margin: auto;">
+                <tr>
+                    <td>
+                        <table>
+                            <tr class="footer-content">
+                                <td style="padding: 30px 44px 0px 44px; background:
+                #0D3683; text-align: center; ">
+                                    <table>
+                                        <tr>
+                                            <td class="footer-email">
+                                                <p>Our mailing address is: </p>
+                                                <p class="email">
+                                                    <a href="mailto:info@trifectacapital.in"
+                                                        style="color: white;">info@trifectacapital.in</a>
+                                                </p>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class=" footer-text" style="padding-top: 20px;">
+                                                <p>Want to change how you receive these emails? <br>You can update your
+                                                    preferences or
+                                                    unsubscribe from this list. </p>
+                                            </td>
+                                        </tr>
+                                        <tr class="emailus">
+                                            <td style="padding-top:20px ;">
+                                                <p> Keep following us on our social media for more updates: </p>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" style="padding-top:0px; background: #0D3683;" class="social-media">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                        <tr>
+                                            <td style="background: #0D3683; text-align: center;">
+                                                <ul
+                                                    style="list-style-type: none; padding-bottom:28px;padding-left: 0px;margin-bottom: 0px;">
+                                                    <li>
+                                                        <a href="#">
+                                                            <img src="https://praveen-terralogic.github.io/capital/imgs/twitter.png"
+                                                                alt="twitter">
+                                                        </a>
+                                                        <p style="color: white;margin: 0px;font-size: 8px;">Twitter</p>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <img src="https://praveen-terralogic.github.io/capital/imgs/linkedin.png"
+                                                                alt="linkedin">
+                                                        </a>
+                                                        <p style="color: white;margin: 0px;font-size: 8px;">LinkedIn</p>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <img src="https://praveen-terralogic.github.io/capital/imgs/link.png"
+                                                                alt="link">
+                                                        </a>
+                                                        <p style="color: white;margin: 0px;font-size: 8px;">Youtube</p>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </center>
+</body>
+
+</html>

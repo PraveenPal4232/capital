@@ -1,1053 +1,951 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
-  xmlns:o="urn:schemas-microsoft-com:office:office">
-
-<head>
-  <meta charset="utf-8">
-  <!-- <meta name="color-scheme" content="light"> -->
-  <meta name="supported-color-schemes" content="light">
-  <meta name="viewport" content="width=device-width">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="x-apple-disable-message-reformatting">
-  <meta name="color-scheme" content="light dark">
-  <title></title>
-  <!-- CSS Reset : BEGIN -->
-  <style>
-    :root {
-      color-scheme: light only;
-    }
-
-    html,
-    body {
-      margin: 0 auto !important;
-      padding: 0 !important;
-      height: 100% !important;
-      width: 100% !important;
-      background: #F5F5F5;
-    }
-
-    /* What it does: Stops email clients resizing small text. */
-    * {
-      -ms-text-size-adjust: 100%;
-      -webkit-text-size-adjust: 100%;
-    }
-
-    a {
-      text-decoration: none;
-      display: inline-block;
-    }
-
-    /* What it does: Centers email on Android 4.4 */
-    div[style*="margin: 16px 0"] {
-      margin: 0 !important;
-    }
-
-    /* What it does: Stops Outlook from adding extra spacing to tables. */
-    table,
-    td {
-      mso-table-lspace: 0pt !important;
-      mso-table-rspace: 0pt !important;
-    }
-
-    /* What it does: Fixes webkit padding issue. */
-    table {
-      border-spacing: 0 !important;
-      border-collapse: collapse !important;
-      table-layout: fixed !important;
-      margin: 0 auto !important;
-    }
-
-    /* What it does: Uses a better rendering method when resizing images in IE. */
-    img {
-      -ms-interpolation-mode: bicubic;
-    }
-
-    /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
-    a {
-      text-decoration: none;
-    }
-
-    /* What it does: A work-around for email clients meddling in triggered links. */
-    *[x-apple-data-detectors],
-    /* iOS */
-    .unstyle-auto-detected-links *,
-    .aBn {
-      border-bottom: 0 !important;
-      cursor: default !important;
-      color: inherit !important;
-      text-decoration: none !important;
-      font-size: inherit !important;
-      font-family: inherit !important;
-      font-weight: inherit !important;
-      line-height: inherit !important;
-    }
-
-    /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
-    .a6S {
-      display: none !important;
-      opacity: 0.01 !important;
-    }
-
-    /* What it does: Prevents Gmail from changing the text color in conversation threads. */
-    .im {
-      color: inherit !important;
-    }
-
-    /* If the above doesn't work, add a .g-img class to any image in question. */
-    img.g-img+div {
-      display: none !important;
-    }
-
-    /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
-    /* Create one of these media queries for each additional viewport size you'd like to fix */
-    /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
-    @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
-      u~div .email-container {
-        min-width: 320px !important;
-      }
-
-      .hero h1 {
-        font-size: 20px !important;
-      }
-    }
-
-    /* iPhone 6, 6S, 7, 8, and X */
-    @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
-      u~div .email-container {
-        min-width: 375px !important;
-      }
-
-      .hero h1 {
-        font-size: 25px !important;
-      }
-    }
-
-    /* iPhone 6+, 7+, and 8+ */
-    @media only screen and (min-device-width: 414px) {
-      u~div .email-container {
-        min-width: 414px !important;
-      }
-
-      .hero h1 {
-        font-size: 25px;
-      }
-    }
-  </style>
-  <!-- CSS Reset : END -->
-  <!-- Progressive Enhancements : BEGIN -->
-  <style>
-    @font-face {
-      font-family: "Avenir";
-      src: url("https://praveenpal4232.github.io/capital/font/Avenir-Book.woff") format('woff');
-    }
-
-    @font-face {
-      font-family: "Avenir";
-      src: url("https://praveenpal4232.github.io/capital/font/Avenir-Black.woff") format('woff');
-      font-weight: bold;
-    }
-
-    body {
-      font-family: Avenir !important;
-    }
-
-    h1 {
-      font-style: normal;
-      font-weight: 500;
-      font-size: 38px;
-      line-height: 0px;
-      text-align: center;
-      color: #162C55;
-      margin-top: 0;
-    }
-
-    .email-container {
-      overflow-x: hidden !important;
-    }
-
-    table {}
-
-    /*LOGO*/
-    .logo h1 {
-      margin: 0;
-    }
-
-    .logo h1 a {
-      color: #000;
-      font-size: 20px;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-
-    /*HERO*/
-    .hero {
-      position: relative;
-    }
-
-    .hero img {}
-
-    .vol-1 {
-      font-weight: 800;
-      font-size: 12px;
-      line-height: 16px;
-      color: #162C55;
-      text-align: right;
-    }
-
-    /* crad class */
-    .card p {
-      color: #FFFFFF;
-      font-family: 'Avenir';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 22px;
-    }
-
-    .card p span {
-      font-size: 18px;
-      font-weight: bold;
-    }
-
-    .card-content p {
-      font-weight: 400;
-      font-size: 10px;
-      line-height: 15px;
-      color: #000000;
-    }
-
-    .heading-section h2 {
-      font-family: 'Avenir';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 19px;
-      color: #E24929;
-      margin: 0px;
-    }
-
-    .heading-section-2 h3 {
-      font-family: 'Avenir';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 19px;
-      color: #E24929;
-      margin: 0px;
-    }
-
-    /*SERVICES*/
-    .text-services {
-      text-align: left;
-      padding-bottom: 20px;
-    }
-
-    .text-services1 {
-      padding-right: 50px;
-    }
-
-    .text-services2 {
-      padding-left: 50px;
-    }
-
-    .text-services p {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 8px;
-      line-height: 12px;
-      color: #000000;
-    }
-
-    /* other investiments */
-    .new-investements p {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 16px;
-      color: #E24929;
-    }
-
-    /* Leadership */
-    .Leadership h2 {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 27px;
-      color: #FFFFFF;
-      margin: 0px;
-    }
-
-    .Leadership p {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 10px;
-      line-height: 150%;
-      color: #FFFFFF;
-    }
-.podcast span,.podcast p{
-    color: #030303;
-}
-    .Leadership h3 {
-      font-family: 'Avenir';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 16px;
-      color: #FFFFFF;
-    }
-
-    .investment-logos {
-      margin: 0px;
-      padding: 0px;
-    }
-
-    .social-media li {
-      height: auto;
-      padding: 4px;
-      border-radius: 50%;
-      text-align: center;
-      display: inline-block;
-      margin: 5px;
-    }
-
-    .social-media li img {
-      max-width: 16px;
-    }
-
-    .name {
-      font-family: 'Avenir';
-      font-style: bold;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 19px;
-      color: #FFFFFF;
-    }
-
-    .footer-content p {
-      font-style: normal;
-      font-weight: 400;
-      font-size: 8px;
-      line-height: 125%;
-      text-align: center;
-      color: #FFFFFF;
-      margin: 0px;
-    }
-
-    .footer-content.email {
-      font-weight: 600;
-      font-size: 8px;
-      line-height: 125%;
-      text-align: center;
-      color: #FFFFFF;
-      margin: 0px;
-    }
-
-    .text-center {
-      text-align: center;
-    }
-
-    .logos-1 {
-      width: 32%;
-      /* padding: 0 1%; */
-      text-align: center;
-      display: inline-block;
-      margin-left: 0px;
-    }
-
-    .logos-1 a {
-      text-align: center;
-      display: inline-block;
-    }
-
-    .logos-1 img {
-      max-height: 30px;
-      max-width: 70px;
-      margin-bottom: 15px;
-      margin-top: 15px;
-    }
-
-    .logos-2 {
-      width: 19%;
-      /* padding: 0 1%; */
-      text-align: center;
-      display: inline-block;
-      margin-left: 0px;
-    }
-
-    .logos-2 a {
-      text-align: center;
-      display: inline-block;
-    }
-
-    .logos-2 img {
-      max-height: 30px;
-      max-width: 70px;
-      margin-bottom: 15px;
-      margin-top: 15px;
-    }
-
-    .text-services img {
-      width: 70px;
-      height: 30px;
-      object-fit: contain;
-    }
-
-    .container {
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-
-    .pt-50 {
-      padding-top: 50px;
-    }
-
-    .pb-50 {
-      padding-bottom: 50px;
-    }
-
-    @media only screen and (max-device-width: 480px),
-    only screen and (max-width: 480px) {
-      .container {
-        padding-left: 20px;
-        padding-right: 20px;
-      }
-
-      .ivca {
-        padding-left: 0px;
-        padding-right: 0px;
-      }
-
-      .pt-50 {
-        padding-top: 30px;
-      }
-
-      .pb-50 {
-        padding-bottom: 30px;
-      }
-
-      .text-services {
-        padding-left: 0;
-        padding-right: 20px;
-        text-align: left;
-      }
-
-      .counter td {
-        padding: 20px 10px !important;
-      }
-
-      .card p {
-        font-size: 12px;
-        line-height: 20px;
-      }
-
-      .card p span {
-        font-size: 14px;
-      }
-
-      .text-services1 {
-        padding-right: 10px;
-      }
-
-      .text-services2 {
-        padding-left: 10px;
-      }
-
-      .arzooo1 {
-        padding-left: 20px !important;
-        padding-right: 0px !important;
-      }
-
-      .arzooo2 {
-        padding-left: 20px !important;
-        padding-right: 20px !important;
-        padding-bottom: 0px !important;
-      }
-
-      .advisory {
-        padding: 20px 20px !important;
-      }
-
-      .advisory-new {
-        padding: 20px 20px 0px 20px !important;
-      }
-
-      .treasury {
-        padding: 40px 20px !important;
-      }
-
-      .catalysing1 {
-        padding-left: 10px !important;
-        padding-right: 10px !important;
-        padding-bottom: 20px !important;
-      }
-
-      .catalysing11 {
-        padding-left: 0px !important;
-      }
-
-      .catalysing2 {
-        padding-left: 10px !important;
-        padding-right: 0px !important;
-        padding-bottom: 20px !important;
-      }
-    }
-  </style>
-</head>
-
-<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly;">
-  <center style="width: 100%;">
-    <div style="max-width: 600px; margin: 0 auto;" class="email-container" style="background: #FFFFFF; ">
-      <!-- BEGIN BODY -->
-      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
-        style="margin: auto;background: #FFFFFF!important">
-        <tr>
-          <td valign="middle" class="hero" style="background-color:#162C55;padding: 20px 0px 0px 0px;">
-            <table>
-              <tr>
-                <td>
-                  <div class="text" style="text-align: center;width: 156px;height: 45px;margin:0px auto;">
-                    <img src="https://praveenpal4232.github.io/capital/imgs/Logo-Light%202.png" alt="line"
-                      style="width: 100%;;height: 100%;">
-                  </div>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-        <tr style="background:#162C55;">
-          <td class="container">
-            <table width="100%" border="0" align="left" style="background:#162C55;">
-              <tbody>
-                <tr>
-                  <td align="right" style="font-size:10px;line-height:22px;font-weight:500;margin: 0px;color:#fff;">
-                    May 2023</td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-        <tr>
-          <td style="background-color:#fff;text-align:center;">
-            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-              <tr class="card-content">
-                <td class="container" style="padding-top: 30px;padding-bottom: 30px;">
-                  <p style="font-size: 10px;line-height: 15px;font-weight: 400;text-align:justify;color:#000">Greetings from Trifecta Capital! We are excited to share the second edition of our newsletter with you, and recap a few of the developments over the last few months. Amidst a moderation in financing flows as compared to 2022, we see some very interesting opportunities present themselves, as new technologies emerge, large businesses continue to scale, valuations become more attractive and consolidatory trends deepen. As custodians of capital charged with protecting, investing and delivering returns to our limited partners, this environment affords a unique moment in time to double down on excellent businesses.</p>
-                  <p style="font-size: 10px;line-height: 15px;font-weight: 400;text-align:justify;color:#000">For us, the first quarter of 2023 was our biggest ever in terms of both the number of new relationships, as well as the amount of capital invested. We invested more than $ 50 mn in across 21 businesses through our venture debt fund, and invested in Atomberg through growth equity fund. This takes us to more than $ 700 mn invested in the Indian start-up ecosystem across 150+ businesses. The quality of companies that we have evaluated this quarter has taken a quantum leap forward, as the slowdown in equity flows has motivated founders to re-look at the sustainability profile of their business. We see a sharp increase in focus on margins, cash breakeven and discipline, while the median portfolio annual revenue growth is still a very healthy 60%+. We are grateful that these companies see increased value in our services, and continue to work with us as they scale.</p>
-                  <p style="font-size: 10px;line-height: 15px;font-weight: 400;text-align:justify;color:#000">While we invest and manage capital, one of the key ways we differentiate ourselves is by also investing in knowledge and thought leadership. February saw us launch “Venture Debt: The Rising Tide of Credit in the New Economy” in partnership with BCG - a seminal report on the venture debt asset class. We worked with more than 50 founders and investors across sectors and stages, to bring perspectives on how different stakeholders have benefited and plan to continue leveraging venture debt on their own journeys.</p>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-        
-        <tr>
-          <td>
-            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
-              style="background-color:#85a7ff40; ">
-              <tr>
-                <td valign="middle" class="card" style="text-align:center;">
-                  <table border="0" cellpadding="0" cellspacing="0" width="100%"
-                    style="background-color:#85a7ff40; color: #ffffff;">
-                    <tr>
-                      <td class="container" style="padding-top: 35px;">
-                        <div class="heading-section" style="text-align: center;">
-                          <a href="https://trifectacapital.in/offerings/credit/">
-                            <p class="text-center"
-                              style="color: #0D3683;font-size:20px;line-height: 27px;font-weight:400;margin-top: 0px;margin-bottom: 5px;">
-                              Venture Debt Updates</p>
-                          </a>
-                        </div>
-                  
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="container">
-                        <div
-                          style="width: 215px;background-color:#0D3683;height:3px;margin: 0px auto;border-radius: 20px;">
-                          <!-- <img src="https://praveenpal4232.github.io/capital/imgs/smallline.svg" alt="line" style="width: 100%;"> -->
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="container" style="padding-top: 35px;">
-                  
-                        <p style="font-size: 10px;line-height: 15px;font-weight: 400;text-align:justify;color:#000">In this quarter alone, we invested venture debt in 21 new-economy businesses, across a variety of consumer brands, B2B enterprise services (including SaaS, IoT, commerce, payments and logistics), fintech and agritech startups.</p>
-
-                        <p style="font-size: 10px;line-height: 15px;font-weight: 400;text-align:justify;color:#000">We had reported growing interest in the clean energy ecosystem last quarter, and are proud to throw a spotlight on one of the most exciting businesses in this space, which is revolutionising the Indian manufacturing capability for high-end batteries that can leverage the domestic mineral supply chain. We began this relationship in the past quarter, and hope to work together with them on an inspiring journey ahead.
-                          </p>
-                      </td>
-                    </tr>
-
-                    <tr>
-                        <td class="container">
-                          <div class="heading-section"
-                            style="text-align:left;padding-top: 15px;">
-                            <a href="https://trifectacapital.in/offerings/credit/">
-                              <p class=""
-                                style="color:#0D3683;font-size:14px;line-height: 19px;font-weight:400;margin-top: 0px;margin-bottom:7px;">
-                                Spotlight on Log9</p>
-                            </a>
-                          </div>
-                        </td>
-                      </tr>
-
-                      
-
-                    <tr>
-                        <td><table border="0" cellpadding="0" cellspacing="0" width="100%" style="color: #ffffff;">
-                            <tbody><tr>
-                        <td class="container" style="padding-top: 0px;padding-right: 0px;">
-                    
-                          <p style="font-size: 10px;line-height: 15px;font-weight: 400;text-align:justify;color:#000">Excited by the differentiated and advanced LTO cell chemistry and battery technology story which could catalyse EV adoption across different vehicle segments, Trifecta Capital partnered with Log9 Materials to cater to multiple capital needs of the company, specific to the EV segment – large capex needs for setting up India’s first indigenous cell manufacturing plant, working capital financing to meet the long cycles of advance payments, inventory planning and receivables endemic to the EV space, and for major R&D expenses to develop new technologies.
-                          </p>
-                      
-                        </td>
-                        <td class="container" style="padding-top: 0px; max-width: 200px;">
-                    
-                            <img src="https://praveenpal4232.github.io/capital/imgs/v2_1.jpg" alt="line"
-                            style="max-width: 150px;">
-                        
-                          </td>
-                          </tr></tbody></table></td>
-                      </tr>
-
-
-                      <tr>
-                        <td class="container" style="padding-top: 35px;">
-                          <div class="heading-section" style="text-align: center;">
-                            <a href="https://trifectacapital.in/offerings/credit/">
-                              <p class="text-center"
-                                style="color: #0D3683;font-size:20px;line-height: 27px;font-weight:400;margin-top: 0px;margin-bottom: 5px;">
-                                Growth Equity Updates</p>
-                            </a>
-                          </div>
-                    
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="container">
-                          <div
-                            style="width: 215px;background-color:#0D3683;height:3px;margin: 0px auto;border-radius: 20px;margin-bottom: 35px;">
-                            <!-- <img src="https://praveenpal4232.github.io/capital/imgs/smallline.svg" alt="line" style="width: 100%;"> -->
-                          </div>
-                        </td>
-                      </tr>
-
-                      
-                    <tr>
-                        <td><table border="0" cellpadding="0" cellspacing="0" width="100%" style="color: #ffffff;">
-                            <tbody><tr>
-                                <td class="container" style="padding-top: 0px; max-width: 200px;">
-                    
-                                    <img src="https://praveenpal4232.github.io/capital/imgs/v2_2.png" alt="line"
-                                    style="max-width: 150px;">
-                                
-                                  </td>
-                        <td class="container" style="padding-top: 0px;padding-left: 0px;">
-                    
-                          <p style="font-size: 10px;line-height: 15px;font-weight: 400;text-align:justify;color:#000">Since the first close in July'21, the Growth Equity fund has invested in 11 leading tech companies, with Atomberg Technologies being the latest addition to our portfolio. We recently invested in Atomberg, India's largest energy-efficient and smart home appliances brand, known for their innovative fans and mixer grinders.The company celebrated a significant milestone in March '23, achieving Rs. 100 Crs in monthly revenue.
-                          </p>
-                      
-                        </td>
-                        
-                          </tr></tbody></table></td>
-                      </tr>
-
-                      
-                      <tr>
-                        <td class="container" style="padding-top: 35px;">
-                          <div class="heading-section" style="text-align: center;">
-                            <a href="https://trifectacapital.in/offerings/credit/">
-                              <p class="text-center"
-                                style="color: #0D3683;font-size:20px;line-height: 27px;font-weight:400;margin-top: 0px;margin-bottom: 5px;">
-                                Financial Solution Updates</p>
-                            </a>
-                          </div>
-                    
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="container">
-                          <div
-                            style="width: 215px;background-color:#0D3683;height:3px;margin: 0px auto;border-radius: 20px;margin-bottom: 35px;">
-                            <!-- <img src="https://praveenpal4232.github.io/capital/imgs/smallline.svg" alt="line" style="width: 100%;"> -->
-                          </div>
-                        </td>
-                      </tr>
-                    
-                  </table>
-                </td>
-              </tr>
-              <tr class="card-content">
-                <td class="container " style="background-color:#85a7ff40 ;padding-bottom: 25px;">
-                  <p style="font-size: 10px;line-height: 15px;font-weight: 400;text-align:justify;color:#000">Financial Solutions has on-boarded 13 new clients in the first quarter of 2023, with notable names including Cogoport, Shiprocket, and Beat0.</p>
-
-                  <p style="font-size: 10px;line-height: 15px;font-weight: 400;text-align:justify;color:#000">Early stage companies continued to show importance to prudent treasury management with capital preservation and protection as key priorities for finance teams. The team partnered with several early stage companies like Kombai, Arthvit, and Onsite with their Founders directly showing interest in treasury planning and allocation.</p>
-                    
-                    <p style="font-size: 10px;line-height: 15px;font-weight: 400;text-align:justify;color:#000">In light of the recent liquidity crisis in a Global start up bank, we continue to reiterate the best practices in treasury management with focus on objective and unbiased advisory, diversification across products and issuers, duration led allocation to match cash flows and regular review and rebalancing to absorb any untoward events and related shocks.</p>
-                </td>
-              </tr>
-              
-            </table>
-          </td>
-        </tr>
-
-        <tr>
-            <td class="email-section Leadership" style="background: #0D3683;color:
-            #FFFFFF">
-              <table>
-
-                <tr>
-                    <td class="container" style="padding-top: 35px;">
-                      <div class="heading-section" style="text-align: center;">
-                        <a href="https://trifectacapital.in/offerings/credit/">
-                          <p class="text-center"
-                            style="color: #ffffff;font-size:20px;line-height: 27px;font-weight:400;margin-top: 0px;margin-bottom: 5px;">
-                            Our Ecosystem Engagement</p>
-                        </a>
-                      </div>
-                
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="container">
-                      <div
-                        style="width: 215px;background-color:#ffffff;height:3px;margin: 0px auto;border-radius: 20px;margin-bottom: 35px;">
-                        <!-- <img src="https://praveenpal4232.github.io/capital/imgs/smallline.svg" alt="line" style="width: 100%;"> -->
-                      </div>
-                    </td>
-                  </tr>
-
-                <tr>
-                  <td class="container">
-                    <table role="presentation" border="0" cellpadding="10" cellspacing="0" width="100%"
-                      class="Leadership">
-
-                      <tr>
-                        
-                        <td class="catalysing1" valign="top" width="48%" style="padding: 0px 20px 0px 0px;background:
-                        #0D3683">
-                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                            <tr>
-                              <td class="text-testimony">
-                   
-                                <p class="name" style="font-size: 10px;line-height: 10px;font-weight:800;margin-top: 0px!important;">Vidit Trifecta Capital Annual Summit</h3>
-                                <p style="font-size: 8px;line-height: 12px;font-weight: 400;margin: 0px;text-align:justify;margin-bottom: 20px;">We were privileged to host our wide LP base and our pioneering founders at the Trifecta Capital Annual Summit, 2023 in May’23 in Mumbai. Across 4 power-packed panels, 9 showcase sessions with some of the most exciting businesses and insights into the outlook for both our debt and equity strategies, and a fun-filled evening of cocktails and networking, the summit was highly appreciated by the entire start-up ecosystem.
-                                </p>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                        <td class="catalysing1 catalysing11" valign="top" width="48%" style="padding:0px 0px 0px 20px;background:
-                        #0D3683">
-                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                            <tr>
-                              <td>
-                                <a href="https://www.linkedin.com/feed/update/urn:li:activity:6952176890400907264">
-                                  <img src="https://praveenpal4232.github.io/capital/imgs/v2_3.jpg" alt=""
-                                    style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
-                                </a>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-
-                      <tr>
-                        
-                        <td class="catalysing1" valign="top" width="48%" style="padding: 0px 20px 0px 0px;background:
-                        #0D3683">
-                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                            <tr>
-                              <td class="text-testimony">
-                   
-                                <p class="name" style="font-size: 10px;line-height: 10px;font-weight:800;margin-top: 0px!important;">Vidit Start-up CFO Conclave</h3>
-                                <p style="font-size: 8px;line-height: 12px;font-weight: 400;margin: 0px;text-align:justify;margin-bottom: 20px;">We hosted a ”Start-up CFO Conclave” in Bangalore that brought together nearly 75+ CFOs from various prominent startups and VC Funds including Accel, Lightspeed, Arkam, Fireside, Sequoia, Curefoods, Stellaris, Udaan, MSD, Kapiva, Blackbuck... The event had numerous informative and engaging sessions, including a panel discussion on "CFO Priorities in the VUCA world." VUCA is an acronym for Volatility, Uncertainty, Complexity and Ambiguity.
-
-                                </p>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                        <td class="catalysing1 catalysing11" valign="top" width="48%" style="padding:0px 0px 0px 20px;background:
-                        #0D3683">
-                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                            <tr>
-                              <td>
-                                <a href="https://www.linkedin.com/feed/update/urn:li:activity:6952176890400907264">
-                                  <img src="https://praveenpal4232.github.io/capital/imgs/v2_4.jpg" alt=""
-                                    style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
-                                </a>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-
-                      <tr>
-                        
-                        <td class="catalysing1" valign="top" width="48%" style="padding: 0px 20px 0px 0px;background:
-                        #0D3683">
-                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                            <tr>
-                              <td class="text-testimony">
-                   
-                                <p class="name" style="font-size: 10px;line-height: 10px;font-weight:800;margin-top: 0px!important;">Vidit IVCA Conclave</h3>
-                                <p style="font-size: 8px;line-height: 12px;font-weight: 400;margin: 0px;text-align:justify;margin-bottom: 5px;">Trifecta Capital participated in the IVCA Annual Conclave held in Feb’23 in Mumbai. We were elated to be a part of panel discussions, launch our Venture Debt report, and receive accolades.
-                                </p>
-                                <p style="font-size: 8px;line-height: 12px;font-weight: 400;margin: 0px;text-align:justify;margin-bottom: 20px;">We are immensely proud to share that Trifecta Venture Debt Fund was awarded the ‘Best Fund Raise of the Year’ accolade in the Venture Debt category, by the prestigious IVCA.
-                                </p>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                        <td class="catalysing1 catalysing11" valign="top" width="48%" style="padding:0px 0px 0px 20px;background:
-                        #0D3683">
-                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                            <tr>
-                              <td>
-                                <a href="https://www.linkedin.com/feed/update/urn:li:activity:6952176890400907264">
-                                  <img src="https://praveenpal4232.github.io/capital/imgs/v2_5.jpg" alt=""
-                                    style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
-                                </a>
-                                
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-
-                      <tr>
-                        
-                        <td class="catalysing1" valign="top" width="48%" style="padding: 0px 20px 0px 0px;background:
-                        #0D3683">
-                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                            <tr>
-                              <td class="text-testimony">
-                   
-                                <a href="https://www.linkedin.com/feed/update/urn:li:activity:6952176890400907264">
-                                    <img src="https://praveenpal4232.github.io/capital/imgs/v2_6.jpg" alt=""
-                                      style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
-                                  </a>
-                                  <p style="font-size: 8px;line-height: 12px;font-weight: 400;margin: 0px;text-align:justify;margin-bottom: 20px;">Lavanya Ashok, Partner at Trifecta Leaders Fund participated in panel discussion on VC investments in India - Keeping up the momentum
-                                </p>
-                                 
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                        <td class="catalysing1 catalysing11" valign="top" width="48%" style="padding:0px 0px 0px 20px;background:
-                        #0D3683">
-                          <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                            <tr>
-                              <td>
-                                <a href="https://www.linkedin.com/feed/update/urn:li:activity:6952176890400907264">
-                                  <img src="https://praveenpal4232.github.io/capital/imgs/v2_7.jpg" alt=""
-                                    style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
-                                </a>
-                                <p style="font-size: 8px;line-height: 12px;font-weight: 400;margin: 0px;text-align:justify;margin-bottom: 20px;">Rahul Khanna, Managing Partner at Trifecta Capital participated in panel discussion on rise of Venture Debt market in India.
-                                </p>
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-               
-              </table>
-            </td>
-          </tr>
-
-        <tr style="background:#FFFFFF" ;>
-          <td class="email-section" style="padding-top:35px; padding-bottom: 35px; width: 100%;">
-            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
-              
-                <tr>
-                    <td class="container">
-                      <div class="heading-section" style="text-align: center;">
-                        <a href="https://trifectacapital.in/offerings/credit/">
-                          <p class="text-center"
-                            style="color: #0D3683;font-size:20px;line-height: 27px;font-weight:400;margin-top: 0px;margin-bottom: 5px;">
-                            Growth Equity Updates</p>
-                        </a>
-                      </div>
-                
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="container">
-                      <div
-                        style="width: 215px;background-color:#0D3683;height:3px;margin: 0px auto;border-radius: 20px;margin-bottom: 25px;">
-                        <!-- <img src="https://praveenpal4232.github.io/capital/imgs/smallline.svg" alt="line" style="width: 100%;"> -->
-                      </div>
-                    </td>
-                  </tr>
-
-                  
-                <tr>
-                    <td><table border="0" cellpadding="0" cellspacing="0" width="100%" style="color: #ffffff;">
-                        <tbody><tr>
-                            
-                    <td class="container" style="padding-top: 0px;padding-right: 0px;">
-
-                  
-                       <p class="" style="color:#0D3683;font-size:14px;line-height: 19px;font-weight:400;margin-top: 0px;margin-bottom:7px;">
-                        Thought Leadership</p>
-                
-                      <p style="font-size: 10px;line-height: 15px;font-weight: 400;text-align:justify;color:#000">Since the first close in July'21, the Growth Equity fund has invested in 11 leading tech companies, with Atomberg Technologies being the latest addition to our portfolio. We recently invested in Atomberg, India's largest energy-efficient and smart home appliances brand, known for their innovative fans and mixer grinders.The company celebrated a significant milestone in March '23, achieving Rs. 100 Crs in monthly revenue.
-                      </p>
-                  
-                    </td>
-
-                    <td class="container" style="padding-top: 0px; max-width: 200px;">
-                
-                        <img src="https://praveenpal4232.github.io/capital/imgs/v2_8.jpg" alt="line"
-                        style="max-width: 100%;">
-                    
-                      </td>
-                    
-                      </tr></tbody></table></td>
-                  </tr>
-
-            </table>
-          </td>
-        </tr>
-       
-        <tr>
-          <td class="container podcast" style=" background:#9CB8FF;color:#030303;padding-top: 37px;padding-bottom: 20px;">
-            <table>
-              <tr>
-                <td>
-                  <div class="heading-section" style="text-align: center;">
-                    <a href="https://trifectacapital.in/offerings/credit/">
-                      <p class="text-center"
-                        style="font-size:20px;color:#030303;line-height: 27px;font-weight:400;margin-top: 0px;margin-bottom: 5px;">
-                        Podcast corner </p>
-                    </a>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td class="container" style="padding-bottom: 35px;">
-                  <div style="width:35px;background-color:#030303;height:3px;margin: 0px auto;border-radius: 20px;">
-                    <!-- <img src="https://praveenpal4232.github.io/capital/imgs/smallline.svg" alt="line" style="width: 100%;"> -->
-                  </div>
-                </td>
-              </tr>
-            </table>
-            <table role="presentation" border="0" cellpadding="10" cellspacing="0" width="100%" class="">
-              <tr>
-                <td class="catalysing1" valign="top" width="48%" style="padding: 0px 20px 0px 0px;">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                    <tr>
-                      <td>
-                        <a href="https://allinchamathjason.libsyn.com/e122-is-ai-the-next-great-computing-platform-chatgpt-vs-google-containing-agi-restrict-act">
-                          <img src="https://praveenpal4232.github.io/capital/imgs/v2_9.jpg" alt=""
-                            style="width: 100%; max-width: 600px; height: auto; margin: auto; margin-bottom:14px; display: block;">
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="text-center">
-                        <span class="name">Chamath Palihapitiya, ALL IN</span>
-                        <p style="text-align: left;font-size: 10px;line-height: 15px;font-weight: 400;text-align:justify">
-                            The round-up of what has been brewing in the revolutionary generative AI space - the rise of AutoGPTs, their massive business potential and impact on various fields, and the risks they face from regulators and incumbent technology corporations.</p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-                <td class="catalysing2" valign="top" width="48%"
-                  style="padding: 0px 0px 0px 20px">
-                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                    <tr>
-                      <td>
-                        <a href="https://www.thetwentyminutevc.com/dara-khosrowshahi/">
-                          <img src="https://praveenpal4232.github.io/capital/imgs/v2_10.jpg" alt=""
-                            style="width: 100%; max-width: 600px; height: auto; margin: auto; margin-bottom:14px; display: block;">
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="text-center" style="color:#030303;">
-                        <span class="name">Dara Khosrowshahi, Uber</span>
-                        <p style="text-align: left;font-size: 10px;line-height: 15px;font-weight: 400;text-align:justify;">
-                            Why Uber Eats is Not Losing the Fight to Doordash; Uber’s M&A Strategy; A Scorecard Analysis from Careem to Postmates & Skip; Why Uber’s Investment in Scooters was a Mistake; Secret to Marriage, Parenting & High Performance.</p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-
-      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
-        style="margin: auto;">
-        <tr>
-          <td>
-            <table>
-              <tr class="footer-content">
-                <td style="padding: 30px 44px 0px 44px; background:
-                #0D3683; text-align: center; ">
+   xmlns:o="urn:schemas-microsoft-com:office:office">
+   <head>
+      <meta charset="utf-8">
+      <!-- <meta name="color-scheme" content="light"> -->
+      <meta name="supported-color-schemes" content="light">
+      <meta name="viewport" content="width=device-width">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="x-apple-disable-message-reformatting">
+      <meta name="color-scheme" content="light dark">
+      <title></title>
+      <!-- CSS Reset : BEGIN -->
+      <style>
+         :root {
+         color-scheme: light only;
+         }
+         html,
+         body {
+         margin: 0 auto !important;
+         padding: 0 !important;
+         height: 100% !important;
+         width: 100% !important;
+         background: #F5F5F5;
+         }
+         /* What it does: Stops email clients resizing small text. */
+         * {
+         -ms-text-size-adjust: 100%;
+         -webkit-text-size-adjust: 100%;
+         }
+         a {
+         text-decoration: none;
+         display: inline-block;
+         }
+         /* What it does: Centers email on Android 4.4 */
+         div[style*="margin: 16px 0"] {
+         margin: 0 !important;
+         }
+         /* What it does: Stops Outlook from adding extra spacing to tables. */
+         table,
+         td {
+         mso-table-lspace: 0pt !important;
+         mso-table-rspace: 0pt !important;
+         }
+         /* What it does: Fixes webkit padding issue. */
+         table {
+         border-spacing: 0 !important;
+         border-collapse: collapse !important;
+         table-layout: fixed !important;
+         margin: 0 auto !important;
+         }
+         /* What it does: Uses a better rendering method when resizing images in IE. */
+         img {
+         -ms-interpolation-mode: bicubic;
+         }
+         /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+         a {
+         text-decoration: none;
+         }
+         /* What it does: A work-around for email clients meddling in triggered links. */
+         *[x-apple-data-detectors],
+         /* iOS */
+         .unstyle-auto-detected-links *,
+         .aBn {
+         border-bottom: 0 !important;
+         cursor: default !important;
+         color: inherit !important;
+         text-decoration: none !important;
+         font-size: inherit !important;
+         font-family: inherit !important;
+         font-weight: inherit !important;
+         line-height: inherit !important;
+         }
+         /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+         .a6S {
+         display: none !important;
+         opacity: 0.01 !important;
+         }
+         /* What it does: Prevents Gmail from changing the text color in conversation threads. */
+         .im {
+         color: inherit !important;
+         }
+         /* If the above doesn't work, add a .g-img class to any image in question. */
+         img.g-img+div {
+         display: none !important;
+         }
+         /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+         /* Create one of these media queries for each additional viewport size you'd like to fix */
+         /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+         @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+         u~div .email-container {
+         min-width: 320px !important;
+         }
+         .hero h1 {
+         font-size: 20px !important;
+         }
+         }
+         /* iPhone 6, 6S, 7, 8, and X */
+         @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+         u~div .email-container {
+         min-width: 375px !important;
+         }
+         .hero h1 {
+         font-size: 25px !important;
+         }
+         }
+         /* iPhone 6+, 7+, and 8+ */
+         @media only screen and (min-device-width: 414px) {
+         u~div .email-container {
+         min-width: 414px !important;
+         }
+         .hero h1 {
+         font-size: 25px;
+         }
+         }
+      </style>
+      <!-- CSS Reset : END -->
+      <!-- Progressive Enhancements : BEGIN -->
+      <style>
+         @font-face {
+         font-family: "Avenir";
+         src: url("https://praveenpal4232.github.io/capital/font/Avenir-Book.woff") format('woff');
+         }
+         @font-face {
+         font-family: "Avenir";
+         src: url("https://praveenpal4232.github.io/capital/font/Avenir-Black.woff") format('woff');
+         font-weight: bold;
+         }
+         body {
+         font-family: Avenir, system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+         }
+         h1 {
+         font-style: normal;
+         font-weight: 500;
+         font-size: 38px;
+         line-height: 0px;
+         text-align: center;
+         color: #162C55;
+         margin-top: 0;
+         }
+         .email-container {
+         overflow-x: hidden !important;
+         }
+         table {}
+         /*LOGO*/
+         .logo h1 {
+         margin: 0;
+         }
+         .logo h1 a {
+         color: #000;
+         font-size: 20px;
+         font-weight: 700;
+         text-transform: uppercase;
+         }
+         /*HERO*/
+         .hero {
+         position: relative;
+         }
+         .hero img {}
+         .vol-1 {
+         font-weight: 800;
+         font-size: 12px;
+         line-height: 16px;
+         color: #162C55;
+         text-align: right;
+         }
+         /* crad class */
+         .card p {
+         color: #FFFFFF;
+         font-family: 'Avenir';
+         font-style: normal;
+         font-weight: 500;
+         font-size: 16px;
+         line-height: 22px;
+         }
+         .card p span {
+         font-size: 18px;
+         font-weight: bold;
+         }
+         .card-content p {
+         font-weight: 400;
+         font-size: 10px;
+         line-height: 15px;
+         color: #000000;
+         }
+         .heading-section h2 {
+         font-family: 'Avenir';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 14px;
+         line-height: 19px;
+         color: #E24929;
+         margin: 0px;
+         }
+         .heading-section-2 h3 {
+         font-family: 'Avenir';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 14px;
+         line-height: 19px;
+         color: #E24929;
+         margin: 0px;
+         }
+         /*SERVICES*/
+         .text-services {
+         text-align: left;
+         padding-bottom: 20px;
+         }
+         .text-services1 {
+         padding-right: 50px;
+         }
+         .text-services2 {
+         padding-left: 50px;
+         }
+         .text-services p {
+         font-style: normal;
+         font-weight: 400;
+         font-size: 8px;
+         line-height: 12px;
+         color: #000000;
+         }
+         /* other investiments */
+         .new-investements p {
+         font-style: normal;
+         font-weight: 400;
+         font-size: 12px;
+         line-height: 16px;
+         color: #E24929;
+         }
+         /* Leadership */
+         .Leadership h2 {
+         font-style: normal;
+         font-weight: 400;
+         font-size: 20px;
+         line-height: 27px;
+         color: #FFFFFF;
+         margin: 0px;
+         }
+         .Leadership p {
+         font-style: normal;
+         font-weight: 400;
+         font-size: 10px;
+         line-height: 150%;
+         color: #FFFFFF;
+         }
+         .podcast span,.podcast p{
+         color: #030303;
+         }
+         .Leadership h3 {
+         font-family: 'Avenir';
+         font-style: normal;
+         font-weight: 500;
+         font-size: 12px;
+         line-height: 16px;
+         color: #FFFFFF;
+         }
+         .investment-logos {
+         margin: 0px;
+         padding: 0px;
+         }
+         .social-media li {
+         height: auto;
+         padding: 4px;
+         border-radius: 50%;
+         text-align: center;
+         display: inline-block;
+         margin: 5px;
+         }
+         .social-media li img {
+         max-width: 16px;
+         }
+         .name {
+         font-family: 'Avenir';
+         font-style: bold;
+         font-weight: 500;
+         font-size: 12px;
+         line-height: 19px;
+         color: #FFFFFF;
+         }
+         .footer-content p {
+         font-style: normal;
+         font-weight: 400;
+         font-size: 8px;
+         line-height: 125%;
+         text-align: center;
+         color: #FFFFFF;
+         margin: 0px;
+         }
+         .footer-content.email {
+         font-weight: 600;
+         font-size: 8px;
+         line-height: 125%;
+         text-align: center;
+         color: #FFFFFF;
+         margin: 0px;
+         }
+         .text-center {
+         text-align: center;
+         }
+         .logos-1 {
+         width: 32%;
+         /* padding: 0 1%; */
+         text-align: center;
+         display: inline-block;
+         margin-left: 0px;
+         }
+         .logos-1 a {
+         text-align: center;
+         display: inline-block;
+         }
+         .logos-1 img {
+         max-height: 30px;
+         max-width: 70px;
+         margin-bottom: 15px;
+         margin-top: 15px;
+         }
+         .logos-2 {
+         width: 19%;
+         /* padding: 0 1%; */
+         text-align: center;
+         display: inline-block;
+         margin-left: 0px;
+         }
+         .logos-2 a {
+         text-align: center;
+         display: inline-block;
+         }
+         .logos-2 img {
+         max-height: 30px;
+         max-width: 70px;
+         margin-bottom: 15px;
+         margin-top: 15px;
+         }
+         .text-services img {
+         width: 70px;
+         height: 30px;
+         object-fit: contain;
+         }
+         .container {
+         padding-left: 5%;
+         padding-right: 5%;
+         }
+         .pt-50 {
+         padding-top: 50px;
+         }
+         .pb-50 {
+         padding-bottom: 50px;
+         }
+         @media only screen and (max-device-width: 480px),
+         only screen and (max-width: 480px) {
+         .container {
+         padding-left: 20px;
+         padding-right: 20px;
+         }
+         .ivca {
+         padding-left: 0px;
+         padding-right: 0px;
+         }
+         .pt-50 {
+         padding-top: 30px;
+         }
+         .pb-50 {
+         padding-bottom: 30px;
+         }
+         .text-services {
+         padding-left: 0;
+         padding-right: 20px;
+         text-align: left;
+         }
+         .counter td {
+         padding: 20px 10px !important;
+         }
+         .card p {
+         font-size: 12px;
+         line-height: 20px;
+         }
+         .card p span {
+         font-size: 14px;
+         }
+         .text-services1 {
+         padding-right: 10px;
+         }
+         .text-services2 {
+         padding-left: 10px;
+         }
+         .arzooo1 {
+         padding-left: 20px !important;
+         padding-right: 0px !important;
+         }
+         .arzooo2 {
+         padding-left: 20px !important;
+         padding-right: 20px !important;
+         padding-bottom: 0px !important;
+         }
+         .advisory {
+         padding: 20px 20px !important;
+         }
+         .advisory-new {
+         padding: 20px 20px 0px 20px !important;
+         }
+         .treasury {
+         padding: 40px 20px !important;
+         }
+         .catalysing1 {
+         padding-left: 10px !important;
+         padding-right: 10px !important;
+         padding-bottom: 20px !important;
+         }
+         .catalysing11 {
+         padding-left: 0px !important;
+         }
+         .catalysing2 {
+         padding-left: 10px !important;
+         padding-right: 0px !important;
+         padding-bottom: 20px !important;
+         }
+         }
+      </style>
+   </head>
+   <body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly;">
+      <center style="width: 100%;">
+         <div style="max-width: 600px; margin: 0 auto;" class="email-container" style="background: #FFFFFF; ">
+            <!-- BEGIN BODY -->
+            <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+               style="margin: auto;background: #FFFFFF!important">
+            <tr>
+               <td valign="middle" class="hero" style="background-color:#162C55;padding: 20px 0px 0px 0px;">
                   <table>
-                    <tr>
-                      <td class="footer-email">
-                        <p>Our mailing address is: </p>
-                        <p class="email">
-                          <a href="mailto:info@trifectacapital.in" style="color: white;">info@trifectacapital.in</a>
-                        </p>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class=" footer-text" style="padding-top: 20px;">
-                        <p>Want to change how you receive these emails? <br>You can update your preferences or
-                          unsubscribe from this list. </p>
-                      </td>
-                    </tr>
-                    <tr class="emailus">
-                      <td style="padding-top:20px ;">
-                        <p> Keep following us on our social media for more updates: </p>
-                      </td>
-                    </tr>
+                     <tr>
+                        <td>
+                           <div class="text" style="text-align: center;width: 156px;height: 45px;margin:0px auto;">
+                              <img src="https://praveenpal4232.github.io/capital/imgs/Logo-Light%202.png" alt="line"
+                                 style="width: 100%;;height: 100%;">
+                           </div>
+                        </td>
+                     </tr>
                   </table>
-                </td>
-              </tr>
-              <tr>
-                <td valign="top" style="padding-top:0px; background: #0D3683;" class="social-media">
+               </td>
+            </tr>
+            <tr style="background:#162C55;">
+               <td class="container">
+                  <table width="100%" border="0" align="left" style="background:#162C55;">
+                     <tbody>
+                        <tr>
+                           <td align="right" style="font-size:10px;line-height:22px;font-weight:500;margin: 0px;color:#fff;">
+                              May 2023
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </td>
+            </tr>
+            <tr>
+               <td style="background-color:#fff;text-align:center;">
                   <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
-                    <tr>
-                      <td style="background: #0D3683; text-align: center;">
-                        <ul style="list-style-type: none; padding-bottom:28px;padding-left: 0px;margin-bottom: 0px;">
-                          <li>
-                            <a href="#">
-                              <img src="https://praveenpal4232.github.io/capital/imgs/twitter.png" alt="twitter">
-                            </a>
-                            <p style="color: white;margin: 0px;font-size: 8px;">Twitter</p>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <img src="https://praveenpal4232.github.io/capital/imgs/linkedin.png" alt="linkedin">
-                            </a>
-                            <p style="color: white;margin: 0px;font-size: 8px;">LinkedIn</p>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <img src="https://praveenpal4232.github.io/capital/imgs/link.png" alt="link">
-                            </a>
-                            <p style="color: white;margin: 0px;font-size: 8px;">Youtube</p>
-                          </li>
-                        </ul>
-                      </td>
-                    </tr>
+                     <tr class="card-content">
+                        <td class="container" style="padding-top: 30px;padding-bottom: 30px;">
+                           <p style="font-size: 10px;line-height: 15px;font-weight: 400;text-align:justify;color:#000">Greetings from Trifecta Capital! We are excited to share the second edition of our newsletter with you, and recap a few of the developments over the last few months. Amidst a moderation in financing flows as compared to 2022, we see some very interesting opportunities present themselves, as new technologies emerge, large businesses continue to scale, valuations become more attractive and consolidatory trends deepen. As custodians of capital charged with protecting, investing and delivering returns to our limited partners, this environment affords a unique moment in time to double down on excellent businesses.</p>
+                           <p style="font-size: 10px;line-height: 15px;font-weight: 400;text-align:justify;color:#000">For us, the first quarter of 2023 was our biggest ever in terms of both the number of new relationships, as well as the amount of capital invested. We invested more than $ 50 mn in across 21 businesses through our venture debt fund, and invested in Atomberg through growth equity fund. This takes us to more than $ 700 mn invested in the Indian start-up ecosystem across 150+ businesses. The quality of companies that we have evaluated this quarter has taken a quantum leap forward, as the slowdown in equity flows has motivated founders to re-look at the sustainability profile of their business. We see a sharp increase in focus on margins, cash breakeven and discipline, while the median portfolio annual revenue growth is still a very healthy 60%+. We are grateful that these companies see increased value in our services, and continue to work with us as they scale.</p>
+                           <p style="font-size: 10px;line-height: 15px;font-weight: 400;text-align:justify;color:#000">While we invest and manage capital, one of the key ways we differentiate ourselves is by also investing in knowledge and thought leadership. February saw us launch “Venture Debt: The Rising Tide of Credit in the New Economy” in partnership with BCG - a seminal report on the venture debt asset class. We worked with more than 50 founders and investors across sectors and stages, to bring perspectives on how different stakeholders have benefited and plan to continue leveraging venture debt on their own journeys.</p>
+                        </td>
+                     </tr>
                   </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    </div>
-  </center>
-</body>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                     style="background-color:#85a7ff40; ">
+                     <tr>
+                        <td valign="middle" class="card" style="text-align:center;">
+                           <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                              style="background-color:#85a7ff40; color: #ffffff;">
+                              <tr>
+                                 <td class="container" style="padding-top: 35px;">
+                                    <div class="heading-section" style="text-align: center;">
+                                       <a href="https://trifectacapital.in/offerings/credit/">
+                                          <p class="text-center"
+                                             style="color: #0D3683;font-size:18px;line-height: 27px;font-weight:400;margin-top: 0px;margin-bottom: 5px;">
+                                             Venture Debt Updates
+                                          </p>
+                                       </a>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td class="container">
+                                    <div
+                                       style="width: 215px;background-color:#0D3683;height:3px;margin: 0px auto;border-radius: 20px;">
+                                       <!-- <img src="https://praveenpal4232.github.io/capital/imgs/smallline.svg" alt="line" style="width: 100%;"> -->
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td class="container" style="padding-top: 35px;">
+                                    <p style="font-size: 10px;line-height: 15px;font-weight: 400;text-align:justify;color:#000">In this quarter alone, we invested venture debt in 21 new-economy businesses, across a variety of consumer brands, B2B enterprise services (including SaaS, IoT, commerce, payments and logistics), fintech and agritech startups.</p>
+                                    <p style="font-size: 10px;line-height: 15px;font-weight: 400;text-align:justify;color:#000">We had reported growing interest in the clean energy ecosystem last quarter, and are proud to throw a spotlight on one of the most exciting businesses in this space, which is revolutionising the Indian manufacturing capability for high-end batteries that can leverage the domestic mineral supply chain. We began this relationship in the past quarter, and hope to work together with them on an inspiring journey ahead.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td class="container">
+                                    <div class="heading-section"
+                                       style="text-align:left;padding-top: 15px;">
+                                          <p class=""
+                                             style="color:#0D3683;font-size:14px;line-height: 19px;font-weight:400;margin-top: 0px;margin-bottom:7px;">
+                                             Spotlight on Log9
+                                          </p>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="color: #ffffff;">
+                                       <tbody>
+                                          <tr>
+                                             <td class="container" style="padding-top: 0px;padding-right: 0px;">
+                                                <p style="font-size: 10px;line-height: 15px;font-weight: 400;text-align:justify;color:#000;margin-top: 0px;">Excited by the differentiated and advanced LTO cell chemistry and battery technology story which could catalyse EV adoption across different vehicle segments, Trifecta Capital partnered with Log9 Materials to cater to multiple capital needs of the company, specific to the EV segment – large capex needs for setting up India’s first indigenous cell manufacturing plant, working capital financing to meet the long cycles of advance payments, inventory planning and receivables endemic to the EV space, and for major R&D expenses to develop new technologies.
+                                                </p>
+                                             </td>
+                                             <td class="container" style="padding-top: 0px; max-width: 200px;">
+                                              <a href="https://www.log9materials.com/" style="display: block;">
+                                                <img src="https://praveenpal4232.github.io/capital/imgs/v2_1.jpg" alt="line"
+                                                   style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
+                                                   </a>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td class="container" style="padding-top: 35px;">
+                                    <div class="heading-section" style="text-align: center;">
+                                          <p class="text-center"
+                                             style="color: #0D3683;font-size:18px;line-height: 27px;font-weight:400;margin-top: 0px;margin-bottom: 5px;">
+                                             Growth Equity Updates
+                                          </p>
 
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td class="container">
+                                    <div
+                                       style="width: 215px;background-color:#0D3683;height:3px;margin: 0px auto;border-radius: 20px;margin-bottom: 35px;">
+                                       <!-- <img src="https://praveenpal4232.github.io/capital/imgs/smallline.svg" alt="line" style="width: 100%;"> -->
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="color: #ffffff;">
+                                       <tbody>
+                                          <tr>
+                                             <td class="container" style="padding-top: 0px; max-width: 200px;">
+                                              <a href=" https://atomberg.com/" style="display: block;">
+                                                <img src="https://praveenpal4232.github.io/capital/imgs/v2_2. png" alt="line"
+                                                   style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
+                                                  </a>
+                                             </td>
+                                             <td class="container" style="padding-top: 0px;padding-left: 0px;">
+                                                <p style="font-size: 10px;line-height: 15px;font-weight: 400;text-align:justify;color:#000">Since the first close in July'21, the Growth Equity fund has invested in 11 leading tech companies, with Atomberg Technologies being the latest addition to our portfolio. We recently invested in Atomberg, India's largest energy-efficient and smart home appliances brand, known for their innovative fans and mixer grinders.The company celebrated a significant milestone in March '23, achieving Rs. 100 Crs in monthly revenue.
+                                                </p>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td class="container" style="padding-top: 35px;">
+                                    <div class="heading-section" style="text-align: center;">
+                                       <a href="https://trifectacapital.in/offerings/credit/">
+                                          <p class="text-center"
+                                             style="color: #0D3683;font-size:18px;line-height: 27px;font-weight:400;margin-top: 0px;margin-bottom: 5px;">
+                                             Financial Solution Updates
+                                          </p>
+                                       </a>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td class="container">
+                                    <div
+                                       style="width: 215px;background-color:#0D3683;height:3px;margin: 0px auto;border-radius: 20px;margin-bottom: 35px;">
+                                       <!-- <img src="https://praveenpal4232.github.io/capital/imgs/smallline.svg" alt="line" style="width: 100%;"> -->
+                                    </div>
+                                 </td>
+                              </tr>
+                           </table>
+                        </td>
+                     </tr>
+                     <tr class="card-content">
+                        <td class="container " style="background-color:#85a7ff40 ;padding-bottom: 25px;">
+                           <p style="font-size: 10px;line-height: 15px;font-weight: 400;text-align:justify;color:#000">Financial Solutions has on-boarded 13 new clients in the first quarter of 2023, with notable names including Cogoport, Shiprocket, and Beat0.</p>
+                           <p style="font-size: 10px;line-height: 15px;font-weight: 400;text-align:justify;color:#000">Early stage companies continued to show importance to prudent treasury management with capital preservation and protection as key priorities for finance teams. The team partnered with several early stage companies like Kombai, Arthvit, and Onsite with their Founders directly showing interest in treasury planning and allocation.</p>
+                           <p style="font-size: 10px;line-height: 15px;font-weight: 400;text-align:justify;color:#000">In light of the recent liquidity crisis in a Global start up bank, we continue to reiterate the best practices in treasury management with focus on objective and unbiased advisory, diversification across products and issuers, duration led allocation to match cash flows and regular review and rebalancing to absorb any untoward events and related shocks.</p>
+                        </td>
+                     </tr>
+                  </table>
+               </td>
+            </tr>
+            <tr>
+               <td class="email-section Leadership" style="background: #0D3683;color:
+                  #FFFFFF">
+                  <table>
+                     <tr>
+                        <td class="container" style="padding-top: 35px;">
+                           <div class="heading-section" style="text-align: center;">
+                                 <p class="text-center"
+                                    style="color: #ffffff;font-size:18px;line-height: 27px;font-weight:400;margin-top: 0px;margin-bottom: 5px;">
+                                    Our Ecosystem Engagement
+                                 </p>
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="container">
+                           <div
+                              style="width: 215px;background-color:#ffffff;height:3px;margin: 0px auto;border-radius: 20px;margin-bottom: 35px;">
+                              <!-- <img src="https://praveenpal4232.github.io/capital/imgs/smallline.svg" alt="line" style="width: 100%;"> -->
+                           </div>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="container">
+                           <table role="presentation" border="0" cellpadding="10" cellspacing="0" width="100%"
+                              class="Leadership">
+                              <tr>
+                                 <td class="catalysing1" valign="top" width="48%" style="padding: 0px 20px 0px 0px;background:
+                                    #0D3683">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                       <tr>
+                                          <td class="text-testimony">
+                                             <p class="name" style="font-size: 10px;line-height: 10px;font-weight:800;margin-top: 0px!important;">Trifecta Capital Annual Summit
+                                             </h3>
+                                             <p style="font-size: 8px;line-height: 12px;font-weight: 400;margin: 0px;text-align:justify;margin-bottom: 20px;">We were privileged to host our wide LP base and our pioneering founders at the Trifecta Capital Annual Summit, 2023 in May’23 in Mumbai. Across 4 power-packed panels, 9 showcase sessions with some of the most exciting businesses and insights into the outlook for both our debt and equity strategies, and a fun-filled evening of cocktails and networking, the summit was highly appreciated by the entire start-up ecosystem.
+                                             </p>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                                 <td class="catalysing1 catalysing11" valign="top" width="48%" style="padding:0px 0px 0px 20px;background:
+                                    #0D3683">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                       <tr>
+                                          <td>
+                                             <a href="https://www.youtube.com/watch?v=1pmvuS0ek90">
+                                             <img src="https://praveenpal4232.github.io/capital/imgs/v2_3.jpg" alt=""
+                                                style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;margin-bottom: 20px;">
+                                             </a>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td class="catalysing1" valign="top" width="48%" style="padding: 0px 20px 0px 0px;background:
+                                    #0D3683">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                       <tr>
+                                          <td class="text-testimony">
+                                             <p class="name" style="font-size: 10px;line-height: 10px;font-weight:800;margin-top: 0px!important;">Start-up CFO Conclave
+                                             </h3>
+                                             <p style="font-size: 8px;line-height: 12px;font-weight: 400;margin: 0px;text-align:justify;margin-bottom: 20px;">We hosted a ”Start-up CFO Conclave” in Bangalore that brought together nearly 75+ CFOs from various prominent startups and VC Funds including Accel, Lightspeed, Arkam, Fireside, Sequoia, Curefoods, Stellaris, Udaan, MSD, Kapiva, Blackbuck... The event had numerous informative and engaging sessions, including a panel discussion on "CFO Priorities in the VUCA world." VUCA is an acronym for Volatility, Uncertainty, Complexity and Ambiguity.
+                                             </p>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                                 <td class="catalysing1 catalysing11" valign="top" width="48%" style="padding:0px 0px 0px 20px;background:
+                                    #0D3683">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                       <tr>
+                                          <td>
+                                             <a href="https://twitter.com/TrifectaCap/status/1630210090165993472?s=20">
+                                             <img src="https://praveenpal4232.github.io/capital/imgs/v2_4.jpg" alt=""
+                                                style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;margin-bottom: 20px;">
+                                             </a>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td class="catalysing1" valign="top" width="48%" style="padding: 0px 20px 0px 0px;background:
+                                    #0D3683">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                       <tr>
+                                          <td class="text-testimony">
+                                             <p class="name" style="font-size: 10px;line-height: 10px;font-weight:800;margin-top: 0px!important;">IVCA Conclave
+                                             </h3>
+                                             <p style="font-size: 8px;line-height: 12px;font-weight: 400;margin: 0px;text-align:justify;margin-bottom: 5px;">Trifecta Capital participated in the IVCA Annual Conclave held in Feb’23 in Mumbai. We were elated to be a part of panel discussions, launch our Venture Debt report, and receive accolades.
+                                             </p>
+                                             <p style="font-size: 8px;line-height: 12px;font-weight: 400;margin: 0px;text-align:justify;margin-bottom: 20px;">We are immensely proud to share that Trifecta Venture Debt Fund was awarded the ‘Best Fund Raise of the Year’ accolade in the Venture Debt category, by the prestigious IVCA.
+                                             </p>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                                 <td class="catalysing1 catalysing11" valign="top" width="48%" style="padding:0px 0px 0px 20px;background:
+                                    #0D3683">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                       <tr>
+                                          <td>
+                                             <a href="https://twitter.com/IndianVCA/status/1628394973069717504?s=20">
+                                             <img src="https://praveenpal4232.github.io/capital/imgs/v2_5.jpg" alt=""
+                                                style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;margin-bottom: 20px;">
+                                             </a>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td class="catalysing1" valign="top" width="48%" style="padding: 0px 20px 0px 0px;background:
+                                    #0D3683">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                       <tr>
+                                          <td class="text-testimony">
+                                             <a href="https://twitter.com/IndianVCA/status/1627975576979116032?s=20">
+                                             <img src="https://praveenpal4232.github.io/capital/imgs/v2_6.jpg" alt=""
+                                                style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
+                                             </a>
+                                             <p style="font-size: 8px;line-height: 12px;font-weight: 400;margin: 0px;text-align:justify;margin-bottom: 20px;">Lavanya Ashok, Partner at Trifecta Leaders Fund participated in panel discussion on VC investments in India - Keeping up the momentum
+                                             </p>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                                 <td class="catalysing1 catalysing11" valign="top" width="48%" style="padding:0px 0px 0px 20px;background:
+                                    #0D3683">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                       <tr>
+                                          <td>
+                                             <a href="https://twitter.com/IndianVCA/status/1628359422736240640?s=20">
+                                             <img src="https://praveenpal4232.github.io/capital/imgs/v2_7.jpg" alt=""
+                                                style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
+                                             </a>
+                                             <p style="font-size: 8px;line-height: 12px;font-weight: 400;margin: 0px;text-align:justify;margin-bottom: 20px;">Rahul Khanna, Managing Partner at Trifecta Capital participated in panel discussion on rise of Venture Debt market in India.
+                                             </p>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                              </tr>
+                           </table>
+                        </td>
+                     </tr>
+                     <tr style="background:#FFFFFF" ;>
+                        <td class="email-section" style="padding-top:35px; padding-bottom: 35px; width: 100%;">
+                           <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                              <tr>
+                                 <td class="container">
+                                    <div class="heading-section" style="text-align: center;">
+                                          <p class="text-center"
+                                             style="color: #0D3683;font-size:18px;line-height: 27px;font-weight:400;margin-top: 0px;margin-bottom: 5px;">
+                                             Growth Equity Updates
+                                          </p>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td class="container">
+                                    <div
+                                       style="width: 215px;background-color:#0D3683;height:3px;margin: 0px auto;border-radius: 20px;margin-bottom: 25px;">
+                                       <!-- <img src="https://praveenpal4232.github.io/capital/imgs/smallline.svg" alt="line" style="width: 100%;"> -->
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="color: #ffffff;">
+                                       <tbody>
+                                          <tr>
+                                             <td class="container" style="padding-top: 0px;padding-right: 0px;">
+                                                <p class="" style="color:#0D3683;font-size:14px;line-height: 19px;font-weight:400;margin-top: 0px;margin-bottom:0px;">
+                                                   Thought Leadership
+                                                </p>
+                                             </td>
+                                             <td class="container" style="padding-top: 0px; max-width: 200px;">
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td>
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="color: #ffffff;">
+                                       <tbody>
+                                          <tr>
+                                             <td class="container" style="padding-top: 0px;padding-right: 0px;">
+                                                <p style="font-size: 10px;line-height: 15px;font-weight: 400;text-align:justify;color:#000">Since the first close in July'21, the Growth Equity fund has invested in 11 leading tech companies, with Atomberg Technologies being the latest addition to our portfolio. We recently invested in Atomberg, India's largest energy-efficient and smart home appliances brand, known for their innovative fans and mixer grinders.The company celebrated a significant milestone in March '23, achieving Rs. 100 Crs in monthly revenue.
+                                                </p>
+                                             </td>
+                                             <td class="container" style="padding-top: 0px; max-width: 200px;">
+                                              <a href="https://trifectacapital.in/case-study/venture-debt-report/"> <img src="https://praveenpal4232.github.io/capital/imgs/v2_8.jpg" alt="line"
+                                                   style="max-width: 100%;">
+                                                   </a>
+                                             </td>
+                                          </tr>
+                                       </tbody>
+                                    </table>
+                                 </td>
+                              </tr>
+                           </table>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td class="container podcast" style=" background:#9CB8FF;color:#030303;padding-top: 37px;padding-bottom: 20px;">
+                           <table>
+                              <tr>
+                                 <td>
+                                    <div class="heading-section" style="text-align: center;">
+                                       <a href="https://trifectacapital.in/offerings/credit/">
+                                          <p class="text-center"
+                                             style="font-size:18px;color:#030303;line-height: 27px;font-weight:400;margin-top: 0px;margin-bottom: 5px;">
+                                             Podcast corner 
+                                          </p>
+                                       </a>
+                                    </div>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td class="container" style="padding-bottom: 35px;">
+                                    <div style="width:115px;background-color:#030303;height:3px;margin: 0px auto;border-radius: 20px;">
+                                       <!-- <img src="https://praveenpal4232.github.io/capital/imgs/smallline.svg" alt="line" style="width: 100%;"> -->
+                                    </div>
+                                 </td>
+                              </tr>
+                           </table>
+                           <table role="presentation" border="0" cellpadding="10" cellspacing="0" width="100%" class="">
+                              <tr>
+                                 <td class="catalysing1" valign="top" width="48%" style="padding: 0px 20px 0px 0px;">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                       <tr>
+                                          <td>
+                                             <a href="https://allinchamathjason.libsyn.com/e122-is-ai-the-next-great-computing-platform-chatgpt-vs-google-containing-agi-restrict-act">
+                                             <img src="https://praveenpal4232.github.io/capital/imgs/v2_9.jpg" alt=""
+                                                style="width: 100%; max-width: 600px; height: auto; margin: auto; margin-bottom:14px; display: block;">
+                                             </a>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="text-center">
+                                             <span class="name">Chamath Palihapitiya, ALL IN</span>
+                                             <p style="text-align: left;font-size: 10px;line-height: 15px;font-weight: 400;text-align:justify">
+                                                The round-up of what has been brewing in the revolutionary generative AI space - the rise of AutoGPTs, their massive business potential and impact on various fields, and the risks they face from regulators and incumbent technology corporations.
+                                             </p>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                                 <td class="catalysing2" valign="top" width="48%"
+                                    style="padding: 0px 0px 0px 20px">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                       <tr>
+                                          <td>
+                                             <a href="https://www.thetwentyminutevc.com/dara-khosrowshahi/">
+                                             <img src="https://praveenpal4232.github.io/capital/imgs/v2_10.jpg" alt=""
+                                                style="width: 100%; max-width: 600px; height: auto; margin: auto; margin-bottom:14px; display: block;">
+                                             </a>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class="text-center" style="color:#030303;">
+                                             <span class="name">Dara Khosrowshahi, Uber</span>
+                                             <p style="text-align: left;font-size: 10px;line-height: 15px;font-weight: 400;text-align:justify;">
+                                                Why Uber Eats is Not Losing the Fight to Doordash; Uber’s M&A Strategy; A Scorecard Analysis from Careem to Postmates & Skip; Why Uber’s Investment in Scooters was a Mistake; Secret to Marriage, Parenting & High Performance.
+                                             </p>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                              </tr>
+                           </table>
+                        </td>
+                     </tr>
+                  </table>
+                  <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                     style="margin: auto;">
+                     <tr>
+                        <td>
+                           <table>
+                              <tr class="footer-content">
+                                 <td style="padding: 30px 44px 0px 44px; background:
+                                    #0D3683; text-align: center; ">
+                                    <table>
+                                       <tr>
+                                          <td class="footer-email">
+                                             <p>Our mailing address is: </p>
+                                             <p class="email">
+                                                <a href="mailto:info@trifectacapital.in" style="color: white;">info@trifectacapital.in</a>
+                                             </p>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td class=" footer-text" style="padding-top: 20px;">
+                                             <p>Want to change how you receive these emails? <br>You can update your preferences or
+                                                unsubscribe from this list. 
+                                             </p>
+                                          </td>
+                                       </tr>
+                                       <tr class="emailus">
+                                          <td style="padding-top:20px ;">
+                                             <p> Keep following us on our social media for more updates: </p>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td valign="top" style="padding-top:0px; background: #0D3683;" class="social-media">
+                                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                                       <tr>
+                                          <td style="background: #0D3683; text-align: center;">
+                                             <ul style="list-style-type: none; padding-bottom:28px;padding-left: 0px;margin-bottom: 0px;">
+                                                <li>
+                                                   <a href="#">
+                                                   <img src="https://praveenpal4232.github.io/capital/imgs/twitter.png" alt="twitter">
+                                                   </a>
+                                                   <p style="color: white;margin: 0px;font-size: 8px;">Twitter</p>
+                                                </li>
+                                                <li>
+                                                   <a href="#">
+                                                   <img src="https://praveenpal4232.github.io/capital/imgs/linkedin.png" alt="linkedin">
+                                                   </a>
+                                                   <p style="color: white;margin: 0px;font-size: 8px;">LinkedIn</p>
+                                                </li>
+                                                <li>
+                                                   <a href="#">
+                                                   <img src="https://praveenpal4232.github.io/capital/imgs/link.png" alt="link">
+                                                   </a>
+                                                   <p style="color: white;margin: 0px;font-size: 8px;">Youtube</p>
+                                                </li>
+                                             </ul>
+                                          </td>
+                                       </tr>
+                                    </table>
+                                 </td>
+                              </tr>
+                           </table>
+                        </td>
+                     </tr>
+                  </table>
+         </div>
+      </center>
+   </body>
 </html>
